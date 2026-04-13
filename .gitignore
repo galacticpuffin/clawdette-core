@@ -1,0 +1,8 @@
+.next
+node_modules
+.DS_Store
+*.log
+dist
+
+# runtime memory artifacts are intentionally persisted, but local audio blobs are ignored
+data/runtime/audio
