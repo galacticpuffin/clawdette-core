@@ -122,7 +122,7 @@ export function applyAdaptationEvent(state: CoreState, request: AdaptationReques
   };
 
   const decayedTasks = state.taskThreads.map((task) => decayTask(task, timestamp));
-  const decayedPathways = state.neuroplasticity.pathways.map((pathway) => decayPathway(pathway, timestamp));
+  const decayedPathways = (state.neuroplasticity?.pathways ?? []).map((pathway) => decayPathway(pathway, timestamp));
 
   const targetedTaskIds = request.taskId ? [request.taskId] : state.activeTaskId ? [state.activeTaskId] : [];
   const taskThreads = decayedTasks.map((task) =>
@@ -150,7 +150,7 @@ export function applyAdaptationEvent(state: CoreState, request: AdaptationReques
   };
 
   const agents = state.agents.map((agent) => {
-    const relevant = neuroplasticity.pathways.filter((pathway) => pathway.from === agent.id || pathway.to === agent.id);
+    const relevant = (neuroplasticity?.pathways ?? []).filter((pathway) => pathway.from === agent.id || pathway.to === agent.id);
     const averageWeight =
       relevant.length > 0 ? relevant.reduce((sum, pathway) => sum + pathway.weight, 0) / relevant.length : agent.signal;
 
@@ -170,7 +170,7 @@ export function applyAdaptationEvent(state: CoreState, request: AdaptationReques
 }
 
 export function buildAdaptiveSignals(state: CoreState) {
-  return state.neuroplasticity.pathways
+  return (state.neuroplasticity?.pathways ?? [])
     .filter((pathway) => pathway.weight > 0.12)
     .sort((a, b) => b.weight + b.salience - (a.weight + a.salience))
     .slice(0, 18)
