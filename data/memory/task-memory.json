@@ -1,5 +1,174 @@
 [
   {
+    "id": "task_rvc5ff93",
+    "title": "Whisper adapter not configured yet. This plac...",
+    "description": "Whisper adapter not configured yet. This placeholder transcript confirms the voice lane and storage path are active.",
+    "origin": "voice",
+    "status": "researching",
+    "urgency": "passive",
+    "assignedAgentIds": [
+      "assistant-dispatch",
+      "chief-of-staff"
+    ],
+    "escalationChannels": [
+      "in_app"
+    ],
+    "summary": "Stored quietly with agent ownership and resumable context.",
+    "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+    "createdAt": "2026-04-14T17:01:00.248Z",
+    "updatedAt": "2026-04-14T19:01:55.034Z",
+    "salience": 0.6197834171692502,
+    "revisitCount": 0,
+    "completionScore": 0,
+    "decay": 0.13345326416666664,
+    "emotionalWeight": 0.375,
+    "themeTags": [
+      "general",
+      "memory"
+    ],
+    "lastTouchedAt": "2026-04-14T19:01:55.034Z",
+    "reasoningTrace": {
+      "id": "reason_mk4myvgd",
+      "leadAgentId": "assistant-dispatch",
+      "supportingAgentIds": [
+        "chief-of-staff"
+      ],
+      "verdict": "High-confidence execution path. Proceed with background work and lightweight updates.",
+      "consensusScore": 0.96,
+      "createdAt": "2026-04-14T17:01:00.248Z",
+      "sources": [
+        {
+          "type": "global_knowledge",
+          "confidence": 0.9099999999999999,
+          "summary": "The request resembles an ongoing product or research track that can be decomposed into agent workstreams."
+        },
+        {
+          "type": "local_memory",
+          "confidence": 0.94,
+          "summary": "Recent local memory artifacts reinforce continuity with Whisper adapter not configured yet. This plac..., Whisper adapter not configured yet. This plac...."
+        },
+        {
+          "type": "behavioral_intent",
+          "confidence": 0.97,
+          "summary": "The active user profile suggests adhd founder behavior, so the system should reduce friction and keep momentum without demanding constant follow-up."
+        }
+      ]
+    },
+    "dormant": false
+  },
+  {
+    "id": "task_w9h45zlj",
+    "title": "Whisper adapter not configured yet. This plac...",
+    "description": "Whisper adapter not configured yet. This placeholder transcript confirms the voice lane and storage path are active.",
+    "origin": "voice",
+    "status": "researching",
+    "urgency": "passive",
+    "assignedAgentIds": [
+      "assistant-dispatch",
+      "chief-of-staff"
+    ],
+    "escalationChannels": [
+      "in_app"
+    ],
+    "summary": "Stored quietly with agent ownership and resumable context.",
+    "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+    "createdAt": "2026-04-14T17:00:56.448Z",
+    "updatedAt": "2026-04-14T17:00:56.448Z",
+    "salience": 0.4674803536935358,
+    "revisitCount": 0,
+    "completionScore": 0,
+    "decay": 0.1670665398611111,
+    "emotionalWeight": 0.48,
+    "themeTags": [
+      "general"
+    ],
+    "lastTouchedAt": "2026-04-14T17:00:56.448Z",
+    "reasoningTrace": {
+      "id": "reason_5lkbeq4n",
+      "leadAgentId": "assistant-dispatch",
+      "supportingAgentIds": [
+        "chief-of-staff"
+      ],
+      "verdict": "High-confidence execution path. Proceed with background work and lightweight updates.",
+      "consensusScore": 0.96,
+      "createdAt": "2026-04-14T17:00:56.448Z",
+      "sources": [
+        {
+          "type": "global_knowledge",
+          "confidence": 0.9099999999999999,
+          "summary": "The request resembles an ongoing product or research track that can be decomposed into agent workstreams."
+        },
+        {
+          "type": "local_memory",
+          "confidence": 0.94,
+          "summary": "Recent local memory artifacts reinforce continuity with Whisper adapter not configured yet. This plac..., HI."
+        },
+        {
+          "type": "behavioral_intent",
+          "confidence": 0.97,
+          "summary": "The active user profile suggests adhd founder behavior, so the system should reduce friction and keep momentum without demanding constant follow-up."
+        }
+      ]
+    },
+    "dormant": false
+  },
+  {
+    "id": "task_ajf4q49u",
+    "title": "Whisper adapter not configured yet. This plac...",
+    "description": "Whisper adapter not configured yet. This placeholder transcript confirms the voice lane and storage path are active.",
+    "origin": "voice",
+    "status": "researching",
+    "urgency": "passive",
+    "assignedAgentIds": [
+      "assistant-dispatch",
+      "chief-of-staff"
+    ],
+    "escalationChannels": [
+      "in_app"
+    ],
+    "summary": "Stored quietly with agent ownership and resumable context.",
+    "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+    "createdAt": "2026-04-14T17:00:55.807Z",
+    "updatedAt": "2026-04-14T17:00:55.807Z",
+    "salience": 0.4595107036656149,
+    "revisitCount": 0,
+    "completionScore": 0,
+    "decay": 0.16706778625,
+    "emotionalWeight": 0.48,
+    "themeTags": [
+      "general"
+    ],
+    "lastTouchedAt": "2026-04-14T17:00:55.807Z",
+    "reasoningTrace": {
+      "id": "reason_g3q2krkk",
+      "leadAgentId": "assistant-dispatch",
+      "supportingAgentIds": [
+        "chief-of-staff"
+      ],
+      "verdict": "High-confidence execution path. Proceed with background work and lightweight updates.",
+      "consensusScore": 0.96,
+      "createdAt": "2026-04-14T17:00:55.807Z",
+      "sources": [
+        {
+          "type": "global_knowledge",
+          "confidence": 0.9099999999999999,
+          "summary": "The request resembles an ongoing product or research track that can be decomposed into agent workstreams."
+        },
+        {
+          "type": "local_memory",
+          "confidence": 0.94,
+          "summary": "Recent local memory artifacts reinforce continuity with HI, MAKE MY BED."
+        },
+        {
+          "type": "behavioral_intent",
+          "confidence": 0.97,
+          "summary": "The active user profile suggests adhd founder behavior, so the system should reduce friction and keep momentum without demanding constant follow-up."
+        }
+      ]
+    },
+    "dormant": false
+  },
+  {
     "id": "task_0kwxvcxy",
     "title": "HI",
     "description": "HI",
@@ -16,17 +185,17 @@
     "summary": "Stored quietly with agent ownership and resumable context.",
     "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
     "createdAt": "2026-04-14T16:34:04.850Z",
-    "updatedAt": "2026-04-14T16:34:11.343Z",
-    "salience": 0.5115911983777778,
+    "updatedAt": "2026-04-14T19:01:55.034Z",
+    "salience": 0.7232471939284312,
     "revisitCount": 0,
     "completionScore": 0,
-    "decay": 0.1432063126388889,
-    "emotionalWeight": 0.41000000000000003,
+    "decay": 0.10142379000000001,
+    "emotionalWeight": 0.34875,
     "themeTags": [
       "general",
       "memory"
     ],
-    "lastTouchedAt": "2026-04-14T16:34:11.343Z",
+    "lastTouchedAt": "2026-04-14T19:01:55.034Z",
     "reasoningTrace": {
       "id": "reason_lswplfix",
       "leadAgentId": "assistant-dispatch",
@@ -74,10 +243,10 @@
     "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
     "createdAt": "2026-04-14T12:44:08.543Z",
     "updatedAt": "2026-04-14T12:44:08.543Z",
-    "salience": 0.8794866935,
+    "salience": 0.8637222717684155,
     "revisitCount": 1,
     "completionScore": 0.22,
-    "decay": 0.12042775541666666,
+    "decay": 0.13345627499999999,
     "emotionalWeight": 0.78,
     "themeTags": [
       "build",
@@ -132,10 +301,10 @@
     "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
     "createdAt": "2026-04-14T12:41:40.815Z",
     "updatedAt": "2026-04-14T12:41:40.815Z",
-    "salience": 0.8794866935,
+    "salience": 0.8637222717684155,
     "revisitCount": 1,
     "completionScore": 0.22,
-    "decay": 0.12042775541666666,
+    "decay": 0.13345627499999999,
     "emotionalWeight": 0.78,
     "themeTags": [
       "build",
@@ -190,10 +359,10 @@
     "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
     "createdAt": "2026-04-14T12:41:34.188Z",
     "updatedAt": "2026-04-14T12:41:34.188Z",
-    "salience": 0.8794866935,
+    "salience": 0.8637222717684155,
     "revisitCount": 1,
     "completionScore": 0.22,
-    "decay": 0.12042775541666666,
+    "decay": 0.13345627499999999,
     "emotionalWeight": 0.78,
     "themeTags": [
       "build",
@@ -251,10 +420,10 @@
     "nextStep": "Expand orchestration, persistence, and external comms without collapsing back into dashboard habits.",
     "createdAt": "2026-04-14T12:34:01.431Z",
     "updatedAt": "2026-04-14T12:34:01.431Z",
-    "salience": 0.8794866935,
+    "salience": 0.8637222717684155,
     "revisitCount": 1,
     "completionScore": 0.22,
-    "decay": 0.12042775541666666,
+    "decay": 0.13345627499999999,
     "emotionalWeight": 0.78,
     "themeTags": [
       "build",

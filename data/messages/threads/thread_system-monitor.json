@@ -2,14 +2,14 @@
   "id": "thread_system-monitor",
   "agentId": "system-monitor",
   "title": "System Monitor Thread",
-  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "updatedAt": "2026-04-14T19:55:06.497Z",
   "messages": [
     {
-      "id": "msg_pg500d61",
+      "id": "msg_5t2cn3of",
       "threadId": "thread_system-monitor",
       "author": "agent",
       "agentId": "system-monitor",
-      "createdAt": "2026-04-14T16:27:30.564Z",
+      "createdAt": "2026-04-14T19:55:06.497Z",
       "state": "monitoring",
       "linkedAgents": [
         "coo",

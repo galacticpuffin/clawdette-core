@@ -2,14 +2,14 @@
   "id": "thread_cfo",
   "agentId": "cfo",
   "title": "CFO Thread",
-  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "updatedAt": "2026-04-14T19:55:06.497Z",
   "messages": [
     {
-      "id": "msg_7w1vxdf0",
+      "id": "msg_b6qphbw1",
       "threadId": "thread_cfo",
       "author": "agent",
       "agentId": "cfo",
-      "createdAt": "2026-04-14T16:27:30.564Z",
+      "createdAt": "2026-04-14T19:55:06.497Z",
       "state": "monitoring",
       "linkedAgents": [
         "ceo",

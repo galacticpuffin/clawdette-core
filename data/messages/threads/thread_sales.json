@@ -2,14 +2,14 @@
   "id": "thread_sales",
   "agentId": "sales",
   "title": "Sales Thread",
-  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "updatedAt": "2026-04-14T19:55:06.497Z",
   "messages": [
     {
-      "id": "msg_ixub3ptf",
+      "id": "msg_93v051zv",
       "threadId": "thread_sales",
       "author": "agent",
       "agentId": "sales",
-      "createdAt": "2026-04-14T16:27:30.564Z",
+      "createdAt": "2026-04-14T19:55:06.497Z",
       "state": "idle",
       "linkedAgents": [
         "cfo",

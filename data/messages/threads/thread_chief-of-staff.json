@@ -2,14 +2,14 @@
   "id": "thread_chief-of-staff",
   "agentId": "chief-of-staff",
   "title": "Chief of Staff Thread",
-  "updatedAt": "2026-04-14T16:34:04.855Z",
+  "updatedAt": "2026-04-14T19:55:06.497Z",
   "messages": [
     {
-      "id": "msg_0bek8jr0",
+      "id": "msg_vh819qvd",
       "threadId": "thread_chief-of-staff",
       "author": "agent",
       "agentId": "chief-of-staff",
-      "createdAt": "2026-04-14T16:27:30.564Z",
+      "createdAt": "2026-04-14T19:55:06.497Z",
       "state": "executing",
       "linkedAgents": [
         "ceo",
@@ -19,33 +19,6 @@
       ],
       "content": "Chief of Staff online. Translates intent into coordinated streams across the brain.",
       "output": "Ready for directive routing."
-    },
-    {
-      "id": "msg_yvd9lcz2",
-      "threadId": "thread_chief-of-staff",
-      "author": "user",
-      "agentId": "chief-of-staff",
-      "content": "HI",
-      "createdAt": "2026-04-14T16:34:04.851Z",
-      "state": "captured",
-      "linkedAgents": [
-        "assistant-dispatch",
-        "chief-of-staff"
-      ]
-    },
-    {
-      "id": "msg_biiamznr",
-      "threadId": "thread_chief-of-staff",
-      "author": "system",
-      "agentId": "chief-of-staff",
-      "content": "Thought captured and routed into \"HI\".",
-      "createdAt": "2026-04-14T16:34:04.851Z",
-      "state": "researching",
-      "linkedAgents": [
-        "assistant-dispatch",
-        "chief-of-staff"
-      ],
-      "output": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt."
     }
   ]
 }

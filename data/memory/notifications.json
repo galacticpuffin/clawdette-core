@@ -1,5 +1,41 @@
 [
   {
+    "id": "notice_stemqmrt",
+    "title": "Stored quietly: Whisper adapter not configured yet. This plac...",
+    "body": "Stored quietly with agent ownership and resumable context. Assigned: assistant-dispatch, chief-of-staff. Next: Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+    "urgency": "passive",
+    "channels": [
+      "in_app"
+    ],
+    "status": "stored",
+    "taskId": "task_rvc5ff93",
+    "createdAt": "2026-04-14T17:01:00.248Z"
+  },
+  {
+    "id": "notice_pjngrvei",
+    "title": "Stored quietly: Whisper adapter not configured yet. This plac...",
+    "body": "Stored quietly with agent ownership and resumable context. Assigned: assistant-dispatch, chief-of-staff. Next: Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+    "urgency": "passive",
+    "channels": [
+      "in_app"
+    ],
+    "status": "stored",
+    "taskId": "task_w9h45zlj",
+    "createdAt": "2026-04-14T17:00:56.448Z"
+  },
+  {
+    "id": "notice_476r839s",
+    "title": "Stored quietly: Whisper adapter not configured yet. This plac...",
+    "body": "Stored quietly with agent ownership and resumable context. Assigned: assistant-dispatch, chief-of-staff. Next: Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+    "urgency": "passive",
+    "channels": [
+      "in_app"
+    ],
+    "status": "stored",
+    "taskId": "task_ajf4q49u",
+    "createdAt": "2026-04-14T17:00:55.807Z"
+  },
+  {
     "id": "notice_y30j8xd0",
     "title": "Stored quietly: HI",
     "body": "Stored quietly with agent ownership and resumable context. Assigned: assistant-dispatch, chief-of-staff. Next: Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",

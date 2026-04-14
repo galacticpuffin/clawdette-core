@@ -1,0 +1,2301 @@
+{
+  "reason": "interval",
+  "state": {
+    "version": 1,
+    "systemName": "CLAWDETTE CORE",
+    "updatedAt": "2026-04-14T19:01:55.034Z",
+    "zoom": "close",
+    "systemMode": "ALERT",
+    "activeAgentId": "assistant-dispatch",
+    "activeTaskId": "task_rvc5ff93",
+    "workspace": {
+      "id": "workspace_clawdette_core",
+      "label": "Private Neural Brain",
+      "mode": "personal",
+      "ownerId": "kayla"
+    },
+    "activeUser": {
+      "id": "kayla",
+      "displayName": "Kayla",
+      "archetype": "adhd_founder"
+    },
+    "agents": [
+      {
+        "id": "ceo",
+        "name": "CEO",
+        "title": "Executive Intent",
+        "region": "executive",
+        "mission": "Owns top-level direction, prioritization, and cross-system decisions.",
+        "tools": [
+          "strategy-router",
+          "decision-log",
+          "briefing-summaries"
+        ],
+        "linkedAgents": [
+          "chief-of-staff",
+          "coo",
+          "cto",
+          "cfo"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "thinking",
+        "load": 0.68,
+        "signal": 0.7437572044916138,
+        "position": [
+          0,
+          1.1,
+          0.1
+        ],
+        "color": "#ff5ab7"
+      },
+      {
+        "id": "chief-of-staff",
+        "name": "Chief of Staff",
+        "title": "Executive Synchronization",
+        "region": "executive",
+        "mission": "Translates intent into coordinated streams across the brain.",
+        "tools": [
+          "agenda-shaper",
+          "thread-router",
+          "ops-brief"
+        ],
+        "linkedAgents": [
+          "ceo",
+          "coo",
+          "assistant-dispatch",
+          "research"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "executing",
+        "load": 0.75,
+        "signal": 0.7058976810931836,
+        "position": [
+          -0.58,
+          0.82,
+          -0.2
+        ],
+        "color": "#ff7cc6"
+      },
+      {
+        "id": "coo",
+        "name": "COO",
+        "title": "Operational Gravity",
+        "region": "operations",
+        "mission": "Owns workflows, reliability, follow-through, and execution cadence.",
+        "tools": [
+          "workflow-runner",
+          "checkpoint-engine",
+          "ops-watch"
+        ],
+        "linkedAgents": [
+          "ceo",
+          "operations",
+          "system-monitor"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "executing",
+        "load": 0.81,
+        "signal": 0.7275072044916138,
+        "position": [
+          -1.18,
+          0.1,
+          0.25
+        ],
+        "color": "#ff4f93"
+      },
+      {
+        "id": "cfo",
+        "name": "CFO",
+        "title": "Capital Signal",
+        "region": "strategy",
+        "mission": "Tracks resource allocation, financial posture, and leverage.",
+        "tools": [
+          "scenario-mapper",
+          "cost-ledger",
+          "runway-model"
+        ],
+        "linkedAgents": [
+          "ceo",
+          "sales",
+          "operations"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "monitoring",
+        "load": 0.37,
+        "signal": 0.55,
+        "position": [
+          0.82,
+          0.54,
+          0.08
+        ],
+        "color": "#ff8bd2"
+      },
+      {
+        "id": "cto",
+        "name": "CTO",
+        "title": "Systems Intelligence",
+        "region": "engineering",
+        "mission": "Directs platform evolution, orchestration logic, and model strategy.",
+        "tools": [
+          "model-router",
+          "tool-adapters",
+          "execution-graph"
+        ],
+        "linkedAgents": [
+          "engineering",
+          "security",
+          "product",
+          "system-monitor"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "thinking",
+        "load": 0.72,
+        "signal": 0.88,
+        "position": [
+          1.08,
+          0.16,
+          0.3
+        ],
+        "color": "#ff5db0"
+      },
+      {
+        "id": "cmo",
+        "name": "CMO",
+        "title": "Narrative Pulse",
+        "region": "creative",
+        "mission": "Shapes messaging, market perception, and content throughput.",
+        "tools": [
+          "campaign-weaver",
+          "voice-tone",
+          "brand-memory"
+        ],
+        "linkedAgents": [
+          "marketing",
+          "creative",
+          "sales"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "idle",
+        "load": 0.43,
+        "signal": 0.58,
+        "position": [
+          1.28,
+          -0.28,
+          -0.02
+        ],
+        "color": "#ff77c4"
+      },
+      {
+        "id": "ciso",
+        "name": "CISO",
+        "title": "Defense Reflex",
+        "region": "security",
+        "mission": "Maintains permission boundaries, trust, and operational safety.",
+        "tools": [
+          "policy-guard",
+          "alert-router",
+          "audit-trace"
+        ],
+        "linkedAgents": [
+          "cto",
+          "system-monitor",
+          "automation"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "monitoring",
+        "load": 0.51,
+        "signal": 0.79,
+        "position": [
+          0.72,
+          -0.96,
+          0.2
+        ],
+        "color": "#ff3b88"
+      },
+      {
+        "id": "research",
+        "name": "Research",
+        "title": "Discovery Cortex",
+        "region": "strategy",
+        "mission": "Finds patterns, gathers evidence, and surfaces strategic options.",
+        "tools": [
+          "source-weaver",
+          "synthesis-engine",
+          "evidence-chain"
+        ],
+        "linkedAgents": [
+          "chief-of-staff",
+          "strategy",
+          "product"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "thinking",
+        "load": 0.64,
+        "signal": 0.6550072044916138,
+        "position": [
+          0.3,
+          0.42,
+          -0.58
+        ],
+        "color": "#ff97d9"
+      },
+      {
+        "id": "strategy",
+        "name": "Strategy",
+        "title": "Long-Horizon Logic",
+        "region": "strategy",
+        "mission": "Owns prioritization frames, scenarios, and future sequencing.",
+        "tools": [
+          "bet-map",
+          "constraint-model",
+          "opportunity-lens"
+        ],
+        "linkedAgents": [
+          "ceo",
+          "research",
+          "product"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "thinking",
+        "load": 0.56,
+        "signal": 0.6593822044916138,
+        "position": [
+          0.48,
+          0.02,
+          -0.82
+        ],
+        "color": "#ff7abf"
+      },
+      {
+        "id": "product",
+        "name": "Product",
+        "title": "Intent Interface",
+        "region": "engineering",
+        "mission": "Turns strategic objectives into structured systems and experiences.",
+        "tools": [
+          "spec-layer",
+          "flow-mapper",
+          "experience-model"
+        ],
+        "linkedAgents": [
+          "cto",
+          "strategy",
+          "engineering",
+          "creative"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "executing",
+        "load": 0.69,
+        "signal": 0.7168822044916137,
+        "position": [
+          0.96,
+          0.54,
+          -0.54
+        ],
+        "color": "#ff6bb8"
+      },
+      {
+        "id": "marketing",
+        "name": "Marketing",
+        "title": "Signal Amplification",
+        "region": "creative",
+        "mission": "Activates campaigns, narrative angles, and demand generation.",
+        "tools": [
+          "content-stream",
+          "campaign-memory",
+          "channel-mapper"
+        ],
+        "linkedAgents": [
+          "cmo",
+          "sales",
+          "creative"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "idle",
+        "load": 0.35,
+        "signal": 0.48,
+        "position": [
+          1.42,
+          0.2,
+          -0.5
+        ],
+        "color": "#ff90d6"
+      },
+      {
+        "id": "sales",
+        "name": "Sales",
+        "title": "Conversion Drive",
+        "region": "operations",
+        "mission": "Owns pipeline movement, outreach, and closing pressure.",
+        "tools": [
+          "deal-velocity",
+          "account-memory",
+          "follow-up-engine"
+        ],
+        "linkedAgents": [
+          "cfo",
+          "marketing",
+          "operations"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "idle",
+        "load": 0.4,
+        "signal": 0.52,
+        "position": [
+          -0.34,
+          -0.56,
+          -0.76
+        ],
+        "color": "#ff659e"
+      },
+      {
+        "id": "operations",
+        "name": "Operations",
+        "title": "Execution Fabric",
+        "region": "operations",
+        "mission": "Keeps queues moving and transforms intent into repeatable delivery.",
+        "tools": [
+          "scheduler",
+          "handoff-engine",
+          "state-keeper"
+        ],
+        "linkedAgents": [
+          "coo",
+          "sales",
+          "automation",
+          "assistant-dispatch"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "executing",
+        "load": 0.77,
+        "signal": 0.7287572044916137,
+        "position": [
+          -1.12,
+          -0.3,
+          -0.25
+        ],
+        "color": "#ff4a86"
+      },
+      {
+        "id": "engineering",
+        "name": "Engineering",
+        "title": "Build Cortex",
+        "region": "engineering",
+        "mission": "Constructs systems, tools, and interfaces that make the core real.",
+        "tools": [
+          "code-runner",
+          "patch-engine",
+          "test-trace"
+        ],
+        "linkedAgents": [
+          "cto",
+          "product",
+          "automation",
+          "memory"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "executing",
+        "load": 0.82,
+        "signal": 0.7543822044916138,
+        "position": [
+          1.4,
+          -0.16,
+          0.56
+        ],
+        "color": "#ff5ba5"
+      },
+      {
+        "id": "security",
+        "name": "Security",
+        "title": "Boundary Mesh",
+        "region": "security",
+        "mission": "Protects secrets, policies, and system trust lines.",
+        "tools": [
+          "policy-map",
+          "secret-scan",
+          "trust-boundary"
+        ],
+        "linkedAgents": [
+          "ciso",
+          "engineering",
+          "system-monitor"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "monitoring",
+        "load": 0.54,
+        "signal": 0.7,
+        "position": [
+          0.22,
+          -1.2,
+          -0.34
+        ],
+        "color": "#ff3377"
+      },
+      {
+        "id": "creative",
+        "name": "Creative",
+        "title": "Aesthetic Cortex",
+        "region": "creative",
+        "mission": "Shapes visual identity, tone, and experiential seduction.",
+        "tools": [
+          "visual-lab",
+          "tone-engine",
+          "moodboard-memory"
+        ],
+        "linkedAgents": [
+          "cmo",
+          "marketing",
+          "product",
+          "voice-comms"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "thinking",
+        "load": 0.59,
+        "signal": 0.68,
+        "position": [
+          1.1,
+          -0.72,
+          -0.62
+        ],
+        "color": "#ff7ab8"
+      },
+      {
+        "id": "automation",
+        "name": "Automation",
+        "title": "Task Weaving",
+        "region": "dispatch",
+        "mission": "Runs workflows across tools, memory, and triggered actions.",
+        "tools": [
+          "workflow-graph",
+          "hook-engine",
+          "dispatch-router"
+        ],
+        "linkedAgents": [
+          "operations",
+          "engineering",
+          "assistant-dispatch"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "executing",
+        "load": 0.7,
+        "signal": 0.7593822044916138,
+        "position": [
+          -0.48,
+          -0.96,
+          0.4
+        ],
+        "color": "#ff588d"
+      },
+      {
+        "id": "memory",
+        "name": "Memory",
+        "title": "Continuity Vault",
+        "region": "memory",
+        "mission": "Maintains persistence, recall, summaries, and future continuation.",
+        "tools": [
+          "summary-engine",
+          "artifact-store",
+          "state-snapshot"
+        ],
+        "linkedAgents": [
+          "engineering",
+          "chief-of-staff",
+          "life-admin"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "monitoring",
+        "load": 0.63,
+        "signal": 0.6487572044916137,
+        "position": [
+          -0.92,
+          0.46,
+          0.78
+        ],
+        "color": "#ffa0df"
+      },
+      {
+        "id": "life-admin",
+        "name": "Life Admin",
+        "title": "Personal Systems",
+        "region": "life",
+        "mission": "Handles personal logistics, reminders, and real-world continuity.",
+        "tools": [
+          "reminder-spine",
+          "household-memory",
+          "calendar-threads"
+        ],
+        "linkedAgents": [
+          "memory",
+          "assistant-dispatch",
+          "voice-comms"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "idle",
+        "load": 0.32,
+        "signal": 0.46,
+        "position": [
+          -1.34,
+          0.58,
+          0.04
+        ],
+        "color": "#ff8bc9"
+      },
+      {
+        "id": "assistant-dispatch",
+        "name": "Assistant / Dispatch",
+        "title": "Instruction Router",
+        "region": "dispatch",
+        "mission": "Receives incoming instructions and routes them to the correct cortex.",
+        "tools": [
+          "intent-router",
+          "approval-lane",
+          "response-weaver"
+        ],
+        "linkedAgents": [
+          "chief-of-staff",
+          "operations",
+          "automation",
+          "voice-comms"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "executing",
+        "load": 0.8,
+        "signal": 0.6820813119427912,
+        "position": [
+          -0.18,
+          0.02,
+          1.04
+        ],
+        "color": "#ff66ae"
+      },
+      {
+        "id": "voice-comms",
+        "name": "Voice / Comms",
+        "title": "Signal Intake",
+        "region": "dispatch",
+        "mission": "Captures voice, transcribes signal, and routes spoken intent.",
+        "tools": [
+          "whisper-adapter",
+          "signal-parser",
+          "transcript-store"
+        ],
+        "linkedAgents": [
+          "assistant-dispatch",
+          "creative",
+          "life-admin"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "monitoring",
+        "load": 0.48,
+        "signal": 0.6775072044916137,
+        "position": [
+          0.36,
+          -0.12,
+          1.18
+        ],
+        "color": "#ff78c8"
+      },
+      {
+        "id": "system-monitor",
+        "name": "System Monitor",
+        "title": "Vital Signs",
+        "region": "monitor",
+        "mission": "Tracks health, failures, queues, and checkpoint integrity.",
+        "tools": [
+          "telemetry-feed",
+          "alert-mapper",
+          "checkpoint-audit"
+        ],
+        "linkedAgents": [
+          "coo",
+          "cto",
+          "ciso"
+        ],
+        "permissions": [
+          {
+            "key": "filesystem.read",
+            "label": "Filesystem Read",
+            "allowed": true
+          },
+          {
+            "key": "filesystem.write",
+            "label": "Filesystem Write",
+            "allowed": true
+          },
+          {
+            "key": "tool.invoke",
+            "label": "Tool Invocation",
+            "allowed": true
+          },
+          {
+            "key": "network.outbound",
+            "label": "Network Outbound",
+            "allowed": false
+          },
+          {
+            "key": "checkpoint.git",
+            "label": "Git Checkpoint",
+            "allowed": true
+          }
+        ],
+        "status": "monitoring",
+        "load": 0.58,
+        "signal": 0.82,
+        "position": [
+          -0.18,
+          -1.28,
+          0.82
+        ],
+        "color": "#ff3f96"
+      }
+    ],
+    "signals": [
+      {
+        "id": "signal_laje8hs6",
+        "from": "ceo",
+        "to": "chief-of-staff",
+        "label": "directive",
+        "intensity": 0.8307514130910306,
+        "weight": 0.8307299861820613,
+        "decay": 0.085536296,
+        "themeTags": [
+          "leadership",
+          "execution"
+        ]
+      },
+      {
+        "id": "signal_aplj989i",
+        "from": "chief-of-staff",
+        "to": "assistant-dispatch",
+        "label": "routing",
+        "intensity": 0.8107514130910306,
+        "weight": 0.8107299861820613,
+        "decay": 0.085536296,
+        "themeTags": [
+          "routing",
+          "coordination"
+        ]
+      },
+      {
+        "id": "signal_9287s0oc",
+        "from": "automation",
+        "to": "engineering",
+        "label": "execution",
+        "intensity": 0.7707514130910307,
+        "weight": 0.7707299861820613,
+        "decay": 0.085536296,
+        "themeTags": [
+          "build",
+          "execution"
+        ]
+      },
+      {
+        "id": "signal_g493gy83",
+        "from": "assistant-dispatch",
+        "to": "automation",
+        "label": "workflow",
+        "intensity": 0.7307514130910306,
+        "weight": 0.7307299861820613,
+        "decay": 0.085536296,
+        "themeTags": [
+          "workflow",
+          "delegation"
+        ]
+      },
+      {
+        "id": "signal_iwesilzg",
+        "from": "coo",
+        "to": "operations",
+        "label": "execution pull",
+        "intensity": 0.7207514130910306,
+        "weight": 0.7207299861820613,
+        "decay": 0.085536296,
+        "themeTags": [
+          "operations",
+          "follow-through"
+        ]
+      },
+      {
+        "id": "signal_0v4khljk",
+        "from": "product",
+        "to": "engineering",
+        "label": "build lane",
+        "intensity": 0.7107514130910306,
+        "weight": 0.7107299861820613,
+        "decay": 0.085536296,
+        "themeTags": [
+          "product",
+          "build"
+        ]
+      },
+      {
+        "id": "signal_u1u7mefj",
+        "from": "voice-comms",
+        "to": "assistant-dispatch",
+        "label": "transcript",
+        "intensity": 0.6707514130910307,
+        "weight": 0.6707299861820614,
+        "decay": 0.085536296,
+        "themeTags": [
+          "voice",
+          "capture"
+        ]
+      },
+      {
+        "id": "signal_thhh7dz7",
+        "from": "research",
+        "to": "strategy",
+        "label": "evidence",
+        "intensity": 0.6507514130910307,
+        "weight": 0.6507299861820613,
+        "decay": 0.085536296,
+        "themeTags": [
+          "research",
+          "strategy"
+        ]
+      },
+      {
+        "id": "signal_41n3b2pp",
+        "from": "memory",
+        "to": "ceo",
+        "label": "continuity",
+        "intensity": 0.6307514130910307,
+        "weight": 0.6307299861820613,
+        "decay": 0.085536296,
+        "themeTags": [
+          "memory",
+          "executive"
+        ]
+      },
+      {
+        "id": "signal_r4ayavtl",
+        "from": "assistant-dispatch",
+        "to": "chief-of-staff",
+        "label": "memory lane",
+        "intensity": 0.5596302911856059,
+        "weight": 0.4651697097045452,
+        "decay": 0.06054547639999998,
+        "themeTags": [
+          "memory"
+        ]
+      }
+    ],
+    "memoryArtifacts": [
+      {
+        "id": "memory_z4ovy1ub",
+        "layer": "task",
+        "title": "Whisper adapter not configured yet. This plac...",
+        "summary": "Stored quietly with agent ownership and resumable context.",
+        "tags": [
+          "assistant-dispatch",
+          "chief-of-staff"
+        ],
+        "createdAt": "2026-04-14T17:01:00.263Z",
+        "updatedAt": "2026-04-14T17:01:00.263Z"
+      },
+      {
+        "id": "memory_75svhnda",
+        "layer": "task",
+        "title": "Whisper adapter not configured yet. This plac...",
+        "summary": "Stored quietly with agent ownership and resumable context.",
+        "tags": [
+          "assistant-dispatch",
+          "chief-of-staff"
+        ],
+        "createdAt": "2026-04-14T17:00:56.482Z",
+        "updatedAt": "2026-04-14T17:00:56.482Z"
+      },
+      {
+        "id": "memory_xjj98oyl",
+        "layer": "task",
+        "title": "Whisper adapter not configured yet. This plac...",
+        "summary": "Stored quietly with agent ownership and resumable context.",
+        "tags": [
+          "assistant-dispatch",
+          "chief-of-staff"
+        ],
+        "createdAt": "2026-04-14T17:00:55.826Z",
+        "updatedAt": "2026-04-14T17:00:55.826Z"
+      },
+      {
+        "id": "memory_6w59k395",
+        "layer": "task",
+        "title": "HI",
+        "summary": "Stored quietly with agent ownership and resumable context.",
+        "tags": [
+          "assistant-dispatch",
+          "chief-of-staff"
+        ],
+        "createdAt": "2026-04-14T16:34:04.864Z",
+        "updatedAt": "2026-04-14T16:34:04.864Z"
+      },
+      {
+        "id": "memory_t3lz0vg7",
+        "layer": "task",
+        "title": "MAKE MY BED",
+        "summary": "Stored quietly with agent ownership and resumable context.",
+        "tags": [
+          "assistant-dispatch",
+          "chief-of-staff"
+        ],
+        "createdAt": "2026-04-14T12:44:08.557Z",
+        "updatedAt": "2026-04-14T12:44:08.557Z"
+      },
+      {
+        "id": "memory_numzr7ib",
+        "layer": "task",
+        "title": "Whisper adapter not configured yet. This plac...",
+        "summary": "Stored quietly with agent ownership and resumable context.",
+        "tags": [
+          "assistant-dispatch",
+          "chief-of-staff"
+        ],
+        "createdAt": "2026-04-14T12:41:40.830Z",
+        "updatedAt": "2026-04-14T12:41:40.830Z"
+      },
+      {
+        "id": "memory_h3uyg77z",
+        "layer": "task",
+        "title": "Whisper adapter not configured yet. This plac...",
+        "summary": "Stored quietly with agent ownership and resumable context.",
+        "tags": [
+          "assistant-dispatch",
+          "chief-of-staff"
+        ],
+        "createdAt": "2026-04-14T12:41:34.204Z",
+        "updatedAt": "2026-04-14T12:41:34.204Z"
+      },
+      {
+        "id": "memory_qe7djnze",
+        "layer": "executive",
+        "title": "Executive Orientation",
+        "summary": "CLAWDETTE CORE is operating as a local-first executive neural system with live orchestration lanes and resumable state.",
+        "tags": [
+          "identity",
+          "executive",
+          "continuity"
+        ],
+        "createdAt": "2026-04-14T12:34:01.431Z",
+        "updatedAt": "2026-04-14T12:34:01.431Z"
+      },
+      {
+        "id": "memory_rsyvhudo",
+        "layer": "project",
+        "title": "Project Charter",
+        "summary": "The interface is the brain itself. Messaging, voice, tools, and memory all live inside the neural substrate.",
+        "tags": [
+          "project",
+          "brain-ui",
+          "architecture"
+        ],
+        "createdAt": "2026-04-14T12:34:01.431Z",
+        "updatedAt": "2026-04-14T12:34:01.431Z"
+      },
+      {
+        "id": "memory_jstbqbe7",
+        "layer": "continuation",
+        "title": "Future Agent Continuation",
+        "summary": "Continue from local filesystem state, recent snapshots, and thread histories before making orchestration changes.",
+        "tags": [
+          "continuation",
+          "resume",
+          "agents"
+        ],
+        "createdAt": "2026-04-14T12:34:01.431Z",
+        "updatedAt": "2026-04-14T12:34:01.431Z"
+      }
+    ],
+    "taskThreads": [
+      {
+        "id": "task_rvc5ff93",
+        "title": "Whisper adapter not configured yet. This plac...",
+        "description": "Whisper adapter not configured yet. This placeholder transcript confirms the voice lane and storage path are active.",
+        "origin": "voice",
+        "status": "researching",
+        "urgency": "passive",
+        "assignedAgentIds": [
+          "assistant-dispatch",
+          "chief-of-staff"
+        ],
+        "escalationChannels": [
+          "in_app"
+        ],
+        "summary": "Stored quietly with agent ownership and resumable context.",
+        "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+        "createdAt": "2026-04-14T17:01:00.248Z",
+        "updatedAt": "2026-04-14T19:01:55.034Z",
+        "salience": 0.6197834171692502,
+        "revisitCount": 0,
+        "completionScore": 0,
+        "decay": 0.13345326416666664,
+        "emotionalWeight": 0.375,
+        "themeTags": [
+          "general",
+          "memory"
+        ],
+        "lastTouchedAt": "2026-04-14T19:01:55.034Z",
+        "reasoningTrace": {
+          "id": "reason_mk4myvgd",
+          "leadAgentId": "assistant-dispatch",
+          "supportingAgentIds": [
+            "chief-of-staff"
+          ],
+          "verdict": "High-confidence execution path. Proceed with background work and lightweight updates.",
+          "consensusScore": 0.96,
+          "createdAt": "2026-04-14T17:01:00.248Z",
+          "sources": [
+            {
+              "type": "global_knowledge",
+              "confidence": 0.9099999999999999,
+              "summary": "The request resembles an ongoing product or research track that can be decomposed into agent workstreams."
+            },
+            {
+              "type": "local_memory",
+              "confidence": 0.94,
+              "summary": "Recent local memory artifacts reinforce continuity with Whisper adapter not configured yet. This plac..., Whisper adapter not configured yet. This plac...."
+            },
+            {
+              "type": "behavioral_intent",
+              "confidence": 0.97,
+              "summary": "The active user profile suggests adhd founder behavior, so the system should reduce friction and keep momentum without demanding constant follow-up."
+            }
+          ]
+        },
+        "dormant": false
+      },
+      {
+        "id": "task_w9h45zlj",
+        "title": "Whisper adapter not configured yet. This plac...",
+        "description": "Whisper adapter not configured yet. This placeholder transcript confirms the voice lane and storage path are active.",
+        "origin": "voice",
+        "status": "researching",
+        "urgency": "passive",
+        "assignedAgentIds": [
+          "assistant-dispatch",
+          "chief-of-staff"
+        ],
+        "escalationChannels": [
+          "in_app"
+        ],
+        "summary": "Stored quietly with agent ownership and resumable context.",
+        "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+        "createdAt": "2026-04-14T17:00:56.448Z",
+        "updatedAt": "2026-04-14T17:00:56.448Z",
+        "salience": 0.4674803536935358,
+        "revisitCount": 0,
+        "completionScore": 0,
+        "decay": 0.1670665398611111,
+        "emotionalWeight": 0.48,
+        "themeTags": [
+          "general"
+        ],
+        "lastTouchedAt": "2026-04-14T17:00:56.448Z",
+        "reasoningTrace": {
+          "id": "reason_5lkbeq4n",
+          "leadAgentId": "assistant-dispatch",
+          "supportingAgentIds": [
+            "chief-of-staff"
+          ],
+          "verdict": "High-confidence execution path. Proceed with background work and lightweight updates.",
+          "consensusScore": 0.96,
+          "createdAt": "2026-04-14T17:00:56.448Z",
+          "sources": [
+            {
+              "type": "global_knowledge",
+              "confidence": 0.9099999999999999,
+              "summary": "The request resembles an ongoing product or research track that can be decomposed into agent workstreams."
+            },
+            {
+              "type": "local_memory",
+              "confidence": 0.94,
+              "summary": "Recent local memory artifacts reinforce continuity with Whisper adapter not configured yet. This plac..., HI."
+            },
+            {
+              "type": "behavioral_intent",
+              "confidence": 0.97,
+              "summary": "The active user profile suggests adhd founder behavior, so the system should reduce friction and keep momentum without demanding constant follow-up."
+            }
+          ]
+        },
+        "dormant": false
+      },
+      {
+        "id": "task_ajf4q49u",
+        "title": "Whisper adapter not configured yet. This plac...",
+        "description": "Whisper adapter not configured yet. This placeholder transcript confirms the voice lane and storage path are active.",
+        "origin": "voice",
+        "status": "researching",
+        "urgency": "passive",
+        "assignedAgentIds": [
+          "assistant-dispatch",
+          "chief-of-staff"
+        ],
+        "escalationChannels": [
+          "in_app"
+        ],
+        "summary": "Stored quietly with agent ownership and resumable context.",
+        "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+        "createdAt": "2026-04-14T17:00:55.807Z",
+        "updatedAt": "2026-04-14T17:00:55.807Z",
+        "salience": 0.4595107036656149,
+        "revisitCount": 0,
+        "completionScore": 0,
+        "decay": 0.16706778625,
+        "emotionalWeight": 0.48,
+        "themeTags": [
+          "general"
+        ],
+        "lastTouchedAt": "2026-04-14T17:00:55.807Z",
+        "reasoningTrace": {
+          "id": "reason_g3q2krkk",
+          "leadAgentId": "assistant-dispatch",
+          "supportingAgentIds": [
+            "chief-of-staff"
+          ],
+          "verdict": "High-confidence execution path. Proceed with background work and lightweight updates.",
+          "consensusScore": 0.96,
+          "createdAt": "2026-04-14T17:00:55.807Z",
+          "sources": [
+            {
+              "type": "global_knowledge",
+              "confidence": 0.9099999999999999,
+              "summary": "The request resembles an ongoing product or research track that can be decomposed into agent workstreams."
+            },
+            {
+              "type": "local_memory",
+              "confidence": 0.94,
+              "summary": "Recent local memory artifacts reinforce continuity with HI, MAKE MY BED."
+            },
+            {
+              "type": "behavioral_intent",
+              "confidence": 0.97,
+              "summary": "The active user profile suggests adhd founder behavior, so the system should reduce friction and keep momentum without demanding constant follow-up."
+            }
+          ]
+        },
+        "dormant": false
+      },
+      {
+        "id": "task_0kwxvcxy",
+        "title": "HI",
+        "description": "HI",
+        "origin": "quick_capture",
+        "status": "researching",
+        "urgency": "passive",
+        "assignedAgentIds": [
+          "assistant-dispatch",
+          "chief-of-staff"
+        ],
+        "escalationChannels": [
+          "in_app"
+        ],
+        "summary": "Stored quietly with agent ownership and resumable context.",
+        "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+        "createdAt": "2026-04-14T16:34:04.850Z",
+        "updatedAt": "2026-04-14T19:01:55.034Z",
+        "salience": 0.7232471939284312,
+        "revisitCount": 0,
+        "completionScore": 0,
+        "decay": 0.10142379000000001,
+        "emotionalWeight": 0.34875,
+        "themeTags": [
+          "general",
+          "memory"
+        ],
+        "lastTouchedAt": "2026-04-14T19:01:55.034Z",
+        "reasoningTrace": {
+          "id": "reason_lswplfix",
+          "leadAgentId": "assistant-dispatch",
+          "supportingAgentIds": [
+            "chief-of-staff"
+          ],
+          "verdict": "Promising path, but keep outputs framed as ongoing research until more evidence accumulates.",
+          "consensusScore": 0.745,
+          "createdAt": "2026-04-14T16:34:04.851Z",
+          "sources": [
+            {
+              "type": "global_knowledge",
+              "confidence": 0.695,
+              "summary": "The request resembles an ongoing product or research track that can be decomposed into agent workstreams."
+            },
+            {
+              "type": "local_memory",
+              "confidence": 0.725,
+              "summary": "Recent local memory artifacts reinforce continuity with MAKE MY BED, Whisper adapter not configured yet. This plac...."
+            },
+            {
+              "type": "behavioral_intent",
+              "confidence": 0.755,
+              "summary": "The active user profile suggests adhd founder behavior, so the system should reduce friction and keep momentum without demanding constant follow-up."
+            }
+          ]
+        },
+        "dormant": false
+      },
+      {
+        "id": "task_7ujnkzsl",
+        "title": "MAKE MY BED",
+        "description": "MAKE MY BED",
+        "origin": "quick_capture",
+        "status": "researching",
+        "urgency": "passive",
+        "assignedAgentIds": [
+          "assistant-dispatch",
+          "chief-of-staff"
+        ],
+        "escalationChannels": [
+          "in_app"
+        ],
+        "summary": "Stored quietly with agent ownership and resumable context.",
+        "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+        "createdAt": "2026-04-14T12:44:08.543Z",
+        "updatedAt": "2026-04-14T12:44:08.543Z",
+        "salience": 0.8637222717684155,
+        "revisitCount": 1,
+        "completionScore": 0.22,
+        "decay": 0.13345627499999999,
+        "emotionalWeight": 0.78,
+        "themeTags": [
+          "build",
+          "research",
+          "strategy"
+        ],
+        "lastTouchedAt": "2026-04-14T16:26:51.366Z",
+        "reasoningTrace": {
+          "id": "reason_2u4n2v9p",
+          "leadAgentId": "assistant-dispatch",
+          "supportingAgentIds": [
+            "chief-of-staff"
+          ],
+          "verdict": "Promising path, but keep outputs framed as ongoing research until more evidence accumulates.",
+          "consensusScore": 0.7675,
+          "createdAt": "2026-04-14T12:44:08.543Z",
+          "sources": [
+            {
+              "type": "global_knowledge",
+              "confidence": 0.7174999999999999,
+              "summary": "The request resembles an ongoing product or research track that can be decomposed into agent workstreams."
+            },
+            {
+              "type": "local_memory",
+              "confidence": 0.7474999999999999,
+              "summary": "Recent local memory artifacts reinforce continuity with Whisper adapter not configured yet. This plac..., Whisper adapter not configured yet. This plac...."
+            },
+            {
+              "type": "behavioral_intent",
+              "confidence": 0.7775,
+              "summary": "The active user profile suggests adhd founder behavior, so the system should reduce friction and keep momentum without demanding constant follow-up."
+            }
+          ]
+        },
+        "dormant": false
+      },
+      {
+        "id": "task_mgonakz1",
+        "title": "Whisper adapter not configured yet. This plac...",
+        "description": "Whisper adapter not configured yet. This placeholder transcript confirms the voice lane and storage path are active.",
+        "origin": "voice",
+        "status": "researching",
+        "urgency": "passive",
+        "assignedAgentIds": [
+          "assistant-dispatch",
+          "chief-of-staff"
+        ],
+        "escalationChannels": [
+          "in_app"
+        ],
+        "summary": "Stored quietly with agent ownership and resumable context.",
+        "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+        "createdAt": "2026-04-14T12:41:40.815Z",
+        "updatedAt": "2026-04-14T12:41:40.815Z",
+        "salience": 0.8637222717684155,
+        "revisitCount": 1,
+        "completionScore": 0.22,
+        "decay": 0.13345627499999999,
+        "emotionalWeight": 0.78,
+        "themeTags": [
+          "build",
+          "research",
+          "strategy"
+        ],
+        "lastTouchedAt": "2026-04-14T16:26:51.366Z",
+        "reasoningTrace": {
+          "id": "reason_7u6us918",
+          "leadAgentId": "assistant-dispatch",
+          "supportingAgentIds": [
+            "chief-of-staff"
+          ],
+          "verdict": "High-confidence execution path. Proceed with background work and lightweight updates.",
+          "consensusScore": 0.96,
+          "createdAt": "2026-04-14T12:41:40.815Z",
+          "sources": [
+            {
+              "type": "global_knowledge",
+              "confidence": 0.9099999999999999,
+              "summary": "The request resembles an ongoing product or research track that can be decomposed into agent workstreams."
+            },
+            {
+              "type": "local_memory",
+              "confidence": 0.94,
+              "summary": "Recent local memory artifacts reinforce continuity with Whisper adapter not configured yet. This plac..., Executive Orientation."
+            },
+            {
+              "type": "behavioral_intent",
+              "confidence": 0.97,
+              "summary": "The active user profile suggests adhd founder behavior, so the system should reduce friction and keep momentum without demanding constant follow-up."
+            }
+          ]
+        },
+        "dormant": false
+      },
+      {
+        "id": "task_86lr986q",
+        "title": "Whisper adapter not configured yet. This plac...",
+        "description": "Whisper adapter not configured yet. This placeholder transcript confirms the voice lane and storage path are active.",
+        "origin": "voice",
+        "status": "researching",
+        "urgency": "passive",
+        "assignedAgentIds": [
+          "assistant-dispatch",
+          "chief-of-staff"
+        ],
+        "escalationChannels": [
+          "in_app"
+        ],
+        "summary": "Stored quietly with agent ownership and resumable context.",
+        "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+        "createdAt": "2026-04-14T12:41:34.188Z",
+        "updatedAt": "2026-04-14T12:41:34.188Z",
+        "salience": 0.8637222717684155,
+        "revisitCount": 1,
+        "completionScore": 0.22,
+        "decay": 0.13345627499999999,
+        "emotionalWeight": 0.78,
+        "themeTags": [
+          "build",
+          "research",
+          "strategy"
+        ],
+        "lastTouchedAt": "2026-04-14T16:26:51.366Z",
+        "reasoningTrace": {
+          "id": "reason_l6xube8q",
+          "leadAgentId": "assistant-dispatch",
+          "supportingAgentIds": [
+            "chief-of-staff"
+          ],
+          "verdict": "High-confidence execution path. Proceed with background work and lightweight updates.",
+          "consensusScore": 0.96,
+          "createdAt": "2026-04-14T12:41:34.189Z",
+          "sources": [
+            {
+              "type": "global_knowledge",
+              "confidence": 0.9099999999999999,
+              "summary": "The request resembles an ongoing product or research track that can be decomposed into agent workstreams."
+            },
+            {
+              "type": "local_memory",
+              "confidence": 0.94,
+              "summary": "Recent local memory artifacts reinforce continuity with Executive Orientation, Project Charter."
+            },
+            {
+              "type": "behavioral_intent",
+              "confidence": 0.97,
+              "summary": "The active user profile suggests adhd founder behavior, so the system should reduce friction and keep momentum without demanding constant follow-up."
+            }
+          ]
+        },
+        "dormant": false
+      },
+      {
+        "id": "task_4pcxmzjj",
+        "title": "Onboard CLAWDETTE CORE as a real product brain",
+        "description": "Keep evolving the system into a local-first but product-grade neural operating system for nonlinear thinkers.",
+        "origin": "system",
+        "status": "active",
+        "urgency": "active",
+        "assignedAgentIds": [
+          "assistant-dispatch",
+          "chief-of-staff",
+          "product",
+          "engineering"
+        ],
+        "escalationChannels": [
+          "in_app",
+          "sms"
+        ],
+        "summary": "Core product thread is active and continuously resumable.",
+        "nextStep": "Expand orchestration, persistence, and external comms without collapsing back into dashboard habits.",
+        "createdAt": "2026-04-14T12:34:01.431Z",
+        "updatedAt": "2026-04-14T12:34:01.431Z",
+        "salience": 0.8637222717684155,
+        "revisitCount": 1,
+        "completionScore": 0.22,
+        "decay": 0.13345627499999999,
+        "emotionalWeight": 0.78,
+        "themeTags": [
+          "build",
+          "research",
+          "strategy"
+        ],
+        "lastTouchedAt": "2026-04-14T16:26:51.366Z",
+        "reasoningTrace": {
+          "id": "reason_jvfdl3b7",
+          "leadAgentId": "chief-of-staff",
+          "supportingAgentIds": [
+            "product",
+            "engineering"
+          ],
+          "verdict": "This should be built as a product system with personal-first defaults and future multi-user seams.",
+          "consensusScore": 0.92,
+          "createdAt": "2026-04-14T12:34:01.431Z",
+          "sources": [
+            {
+              "type": "global_knowledge",
+              "confidence": 0.9,
+              "summary": "Neural UIs can stay expressive while the system behind them remains product-grade and modular."
+            },
+            {
+              "type": "local_memory",
+              "confidence": 0.91,
+              "summary": "Existing project memory already frames CLAWDETTE CORE as a persistent local-first intelligence system."
+            },
+            {
+              "type": "behavioral_intent",
+              "confidence": 0.94,
+              "summary": "The user wants a second mind that catches dropped threads and continues when attention moves elsewhere."
+            }
+          ]
+        },
+        "dormant": false
+      }
+    ],
+    "notifications": [
+      {
+        "id": "notice_stemqmrt",
+        "title": "Stored quietly: Whisper adapter not configured yet. This plac...",
+        "body": "Stored quietly with agent ownership and resumable context. Assigned: assistant-dispatch, chief-of-staff. Next: Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+        "urgency": "passive",
+        "channels": [
+          "in_app"
+        ],
+        "status": "stored",
+        "taskId": "task_rvc5ff93",
+        "createdAt": "2026-04-14T17:01:00.248Z"
+      },
+      {
+        "id": "notice_pjngrvei",
+        "title": "Stored quietly: Whisper adapter not configured yet. This plac...",
+        "body": "Stored quietly with agent ownership and resumable context. Assigned: assistant-dispatch, chief-of-staff. Next: Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+        "urgency": "passive",
+        "channels": [
+          "in_app"
+        ],
+        "status": "stored",
+        "taskId": "task_w9h45zlj",
+        "createdAt": "2026-04-14T17:00:56.448Z"
+      },
+      {
+        "id": "notice_476r839s",
+        "title": "Stored quietly: Whisper adapter not configured yet. This plac...",
+        "body": "Stored quietly with agent ownership and resumable context. Assigned: assistant-dispatch, chief-of-staff. Next: Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+        "urgency": "passive",
+        "channels": [
+          "in_app"
+        ],
+        "status": "stored",
+        "taskId": "task_ajf4q49u",
+        "createdAt": "2026-04-14T17:00:55.807Z"
+      },
+      {
+        "id": "notice_y30j8xd0",
+        "title": "Stored quietly: HI",
+        "body": "Stored quietly with agent ownership and resumable context. Assigned: assistant-dispatch, chief-of-staff. Next: Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+        "urgency": "passive",
+        "channels": [
+          "in_app"
+        ],
+        "status": "stored",
+        "taskId": "task_0kwxvcxy",
+        "createdAt": "2026-04-14T16:34:04.851Z"
+      },
+      {
+        "id": "notice_k44almnu",
+        "title": "Stored quietly: MAKE MY BED",
+        "body": "Stored quietly with agent ownership and resumable context. Assigned: assistant-dispatch, chief-of-staff. Next: Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+        "urgency": "passive",
+        "channels": [
+          "in_app"
+        ],
+        "status": "stored",
+        "taskId": "task_7ujnkzsl",
+        "createdAt": "2026-04-14T12:44:08.543Z"
+      },
+      {
+        "id": "notice_nzgzka4p",
+        "title": "Stored quietly: Whisper adapter not configured yet. This plac...",
+        "body": "Stored quietly with agent ownership and resumable context. Assigned: assistant-dispatch, chief-of-staff. Next: Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+        "urgency": "passive",
+        "channels": [
+          "in_app"
+        ],
+        "status": "stored",
+        "taskId": "task_mgonakz1",
+        "createdAt": "2026-04-14T12:41:40.815Z"
+      },
+      {
+        "id": "notice_oy68pirs",
+        "title": "Stored quietly: Whisper adapter not configured yet. This plac...",
+        "body": "Stored quietly with agent ownership and resumable context. Assigned: assistant-dispatch, chief-of-staff. Next: Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+        "urgency": "passive",
+        "channels": [
+          "in_app"
+        ],
+        "status": "stored",
+        "taskId": "task_86lr986q",
+        "createdAt": "2026-04-14T12:41:34.189Z"
+      },
+      {
+        "id": "notice_bl606lfv",
+        "title": "CLAWDETTE CORE online",
+        "body": "Local-first neural OS initialized with memory, agents, and resumable task continuity.",
+        "urgency": "summary",
+        "channels": [
+          "in_app",
+          "email"
+        ],
+        "status": "stored",
+        "createdAt": "2026-04-14T12:34:01.431Z"
+      }
+    ],
+    "neuroplasticity": {
+      "pathways": [
+        {
+          "id": "path_rgbyxa3o",
+          "from": "ceo",
+          "to": "chief-of-staff",
+          "label": "directive",
+          "weight": 0.8307299861820613,
+          "salience": 0.83077284,
+          "activations": 1,
+          "successfulActivations": 0,
+          "lastActivatedAt": "2026-04-14T16:26:51.366Z",
+          "decay": 0.085536296,
+          "themeTags": [
+            "leadership",
+            "execution"
+          ]
+        },
+        {
+          "id": "path_a90r302r",
+          "from": "chief-of-staff",
+          "to": "assistant-dispatch",
+          "label": "routing",
+          "weight": 0.8107299861820613,
+          "salience": 0.8107728399999999,
+          "activations": 1,
+          "successfulActivations": 0,
+          "lastActivatedAt": "2026-04-14T16:26:51.366Z",
+          "decay": 0.085536296,
+          "themeTags": [
+            "routing",
+            "coordination"
+          ]
+        },
+        {
+          "id": "path_5btvc7ge",
+          "from": "assistant-dispatch",
+          "to": "automation",
+          "label": "workflow",
+          "weight": 0.7307299861820613,
+          "salience": 0.73077284,
+          "activations": 1,
+          "successfulActivations": 0,
+          "lastActivatedAt": "2026-04-14T16:26:51.366Z",
+          "decay": 0.085536296,
+          "themeTags": [
+            "workflow",
+            "delegation"
+          ]
+        },
+        {
+          "id": "path_m0t6v2ap",
+          "from": "automation",
+          "to": "engineering",
+          "label": "execution",
+          "weight": 0.7707299861820613,
+          "salience": 0.77077284,
+          "activations": 1,
+          "successfulActivations": 0,
+          "lastActivatedAt": "2026-04-14T16:26:51.366Z",
+          "decay": 0.085536296,
+          "themeTags": [
+            "build",
+            "execution"
+          ]
+        },
+        {
+          "id": "path_8g9u2heu",
+          "from": "memory",
+          "to": "ceo",
+          "label": "continuity",
+          "weight": 0.6307299861820613,
+          "salience": 0.63077284,
+          "activations": 1,
+          "successfulActivations": 0,
+          "lastActivatedAt": "2026-04-14T16:26:51.366Z",
+          "decay": 0.085536296,
+          "themeTags": [
+            "memory",
+            "executive"
+          ]
+        },
+        {
+          "id": "path_mhe4k7jv",
+          "from": "voice-comms",
+          "to": "assistant-dispatch",
+          "label": "transcript",
+          "weight": 0.6707299861820614,
+          "salience": 0.67077284,
+          "activations": 1,
+          "successfulActivations": 0,
+          "lastActivatedAt": "2026-04-14T16:26:51.366Z",
+          "decay": 0.085536296,
+          "themeTags": [
+            "voice",
+            "capture"
+          ]
+        },
+        {
+          "id": "path_mpy7f81p",
+          "from": "research",
+          "to": "strategy",
+          "label": "evidence",
+          "weight": 0.6507299861820613,
+          "salience": 0.65077284,
+          "activations": 1,
+          "successfulActivations": 0,
+          "lastActivatedAt": "2026-04-14T16:26:51.366Z",
+          "decay": 0.085536296,
+          "themeTags": [
+            "research",
+            "strategy"
+          ]
+        },
+        {
+          "id": "path_nw6hv9r3",
+          "from": "product",
+          "to": "engineering",
+          "label": "build lane",
+          "weight": 0.7107299861820613,
+          "salience": 0.71077284,
+          "activations": 1,
+          "successfulActivations": 0,
+          "lastActivatedAt": "2026-04-14T16:26:51.366Z",
+          "decay": 0.085536296,
+          "themeTags": [
+            "product",
+            "build"
+          ]
+        },
+        {
+          "id": "path_7wxmqfd6",
+          "from": "coo",
+          "to": "operations",
+          "label": "execution pull",
+          "weight": 0.7207299861820613,
+          "salience": 0.72077284,
+          "activations": 1,
+          "successfulActivations": 0,
+          "lastActivatedAt": "2026-04-14T16:26:51.366Z",
+          "decay": 0.085536296,
+          "themeTags": [
+            "operations",
+            "follow-through"
+          ]
+        },
+        {
+          "id": "path_6in8to74",
+          "from": "assistant-dispatch",
+          "to": "chief-of-staff",
+          "label": "memory lane",
+          "weight": 0.4651697097045452,
+          "salience": 0.6540908726666665,
+          "activations": 4,
+          "successfulActivations": 0,
+          "lastActivatedAt": "2026-04-14T19:01:55.034Z",
+          "decay": 0.06054547639999998,
+          "themeTags": [
+            "memory"
+          ]
+        }
+      ],
+      "memoryClusters": [
+        {
+          "id": "cluster_k7ipgjo5",
+          "label": "Build Cortex",
+          "theme": "build",
+          "strength": 0.72,
+          "salience": 0.7446214000000001,
+          "taskIds": [],
+          "memoryIds": [],
+          "lastConsolidatedAt": "2026-04-14T16:26:51.366Z"
+        },
+        {
+          "id": "cluster_ejz3vej9",
+          "label": "Research Halo",
+          "theme": "research",
+          "strength": 0.68,
+          "salience": 0.7046214000000001,
+          "taskIds": [],
+          "memoryIds": [],
+          "lastConsolidatedAt": "2026-04-14T16:26:51.366Z"
+        },
+        {
+          "id": "cluster_zi5ja2t0",
+          "label": "Memory Cluster",
+          "theme": "memory",
+          "strength": 0.44,
+          "salience": 0.53,
+          "taskIds": [
+            "task_0kwxvcxy",
+            "task_rvc5ff93"
+          ],
+          "memoryIds": [],
+          "lastConsolidatedAt": "2026-04-14T19:01:55.034Z"
+        }
+      ],
+      "behavioralPatterns": [
+        {
+          "id": "pattern_ael9gz4l",
+          "theme": "memory",
+          "count": 4,
+          "momentum": 0.4356,
+          "emotionalWeight": 0.34,
+          "lastSeenAt": "2026-04-14T19:01:55.034Z"
+        }
+      ],
+      "cognitiveProfile": {
+        "attentionStyle": "nonlinear",
+        "distractibilityIndex": 0.62,
+        "taskSwitchIntensity": 0.66,
+        "revisitReliance": 0.7,
+        "urgencySensitivity": 0.58,
+        "preferredUpdateMode": "silent",
+        "overfocusThemes": [
+          "build",
+          "strategy"
+        ],
+        "avoidanceThemes": []
+      },
+      "workingMemoryTaskIds": [
+        "task_7ujnkzsl",
+        "task_mgonakz1",
+        "task_86lr986q",
+        "task_4pcxmzjj",
+        "task_0kwxvcxy",
+        "task_rvc5ff93"
+      ],
+      "longTermMemoryTaskIds": [],
+      "adaptationLog": [
+        {
+          "id": "adapt_t1348qfy",
+          "type": "message",
+          "createdAt": "2026-04-14T19:01:55.034Z",
+          "taskId": "task_rvc5ff93",
+          "agentId": "assistant-dispatch",
+          "themeTags": [
+            "memory"
+          ],
+          "emotionalWeight": 0.34,
+          "outcomeWeight": 0.42,
+          "summary": "message :: interval save"
+        },
+        {
+          "id": "adapt_6lvvqg6l",
+          "type": "message",
+          "createdAt": "2026-04-14T17:01:06.303Z",
+          "taskId": "task_rvc5ff93",
+          "agentId": "assistant-dispatch",
+          "themeTags": [
+            "memory"
+          ],
+          "emotionalWeight": 0.34,
+          "outcomeWeight": 0.42,
+          "summary": "message :: interval save"
+        },
+        {
+          "id": "adapt_hlv3ostw",
+          "type": "message",
+          "createdAt": "2026-04-14T17:00:53.524Z",
+          "taskId": "task_0kwxvcxy",
+          "agentId": "assistant-dispatch",
+          "themeTags": [
+            "memory"
+          ],
+          "emotionalWeight": 0.34,
+          "outcomeWeight": 0.42,
+          "summary": "message :: interaction save"
+        },
+        {
+          "id": "adapt_0zbkjxj5",
+          "type": "message",
+          "createdAt": "2026-04-14T16:34:11.343Z",
+          "taskId": "task_0kwxvcxy",
+          "agentId": "assistant-dispatch",
+          "themeTags": [
+            "memory"
+          ],
+          "emotionalWeight": 0.34,
+          "outcomeWeight": 0.42,
+          "summary": "message :: interval save"
+        }
+      ]
+    }
+  }
+}

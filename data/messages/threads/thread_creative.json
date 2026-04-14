@@ -2,14 +2,14 @@
   "id": "thread_creative",
   "agentId": "creative",
   "title": "Creative Thread",
-  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "updatedAt": "2026-04-14T19:55:06.497Z",
   "messages": [
     {
-      "id": "msg_ihlaxxaf",
+      "id": "msg_k754ozoc",
       "threadId": "thread_creative",
       "author": "agent",
       "agentId": "creative",
-      "createdAt": "2026-04-14T16:27:30.564Z",
+      "createdAt": "2026-04-14T19:55:06.497Z",
       "state": "thinking",
       "linkedAgents": [
         "cmo",

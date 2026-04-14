@@ -1,11 +1,11 @@
 {
   "version": 1,
   "systemName": "CLAWDETTE CORE",
-  "updatedAt": "2026-04-14T16:34:11.343Z",
+  "updatedAt": "2026-04-14T19:01:55.034Z",
   "zoom": "close",
   "systemMode": "ALERT",
   "activeAgentId": "assistant-dispatch",
-  "activeTaskId": "task_0kwxvcxy",
+  "activeTaskId": "task_rvc5ff93",
   "workspace": {
     "id": "workspace_clawdette_core",
     "label": "Private Neural Brain",
@@ -64,7 +64,7 @@
       ],
       "status": "thinking",
       "load": 0.68,
-      "signal": 0.8148533410000001,
+      "signal": 0.7437572044916138,
       "position": [
         0,
         1.1,
@@ -118,7 +118,7 @@
       ],
       "status": "executing",
       "load": 0.75,
-      "signal": 0.7583022273333333,
+      "signal": 0.7058976810931836,
       "position": [
         -0.58,
         0.82,
@@ -171,7 +171,7 @@
       ],
       "status": "executing",
       "load": 0.81,
-      "signal": 0.754853341,
+      "signal": 0.7275072044916138,
       "position": [
         -1.18,
         0.1,
@@ -437,7 +437,7 @@
       ],
       "status": "thinking",
       "load": 0.64,
-      "signal": 0.664853341,
+      "signal": 0.6550072044916138,
       "position": [
         0.3,
         0.42,
@@ -490,7 +490,7 @@
       ],
       "status": "thinking",
       "load": 0.56,
-      "signal": 0.6998533410000001,
+      "signal": 0.6593822044916138,
       "position": [
         0.48,
         0.02,
@@ -544,7 +544,7 @@
       ],
       "status": "executing",
       "load": 0.69,
-      "signal": 0.739853341,
+      "signal": 0.7168822044916137,
       "position": [
         0.96,
         0.54,
@@ -704,7 +704,7 @@
       ],
       "status": "executing",
       "load": 0.77,
-      "signal": 0.764853341,
+      "signal": 0.7287572044916137,
       "position": [
         -1.12,
         -0.3,
@@ -758,7 +758,7 @@
       ],
       "status": "executing",
       "load": 0.82,
-      "signal": 0.829853341,
+      "signal": 0.7543822044916138,
       "position": [
         1.4,
         -0.16,
@@ -918,7 +918,7 @@
       ],
       "status": "executing",
       "load": 0.7,
-      "signal": 0.7998533409999999,
+      "signal": 0.7593822044916138,
       "position": [
         -0.48,
         -0.96,
@@ -971,7 +971,7 @@
       ],
       "status": "monitoring",
       "load": 0.63,
-      "signal": 0.754853341,
+      "signal": 0.6487572044916137,
       "position": [
         -0.92,
         0.46,
@@ -1078,7 +1078,7 @@
       ],
       "status": "executing",
       "load": 0.8,
-      "signal": 0.78619000575,
+      "signal": 0.6820813119427912,
       "position": [
         -0.18,
         0.02,
@@ -1131,7 +1131,7 @@
       ],
       "status": "monitoring",
       "load": 0.48,
-      "signal": 0.704853341,
+      "signal": 0.6775072044916137,
       "position": [
         0.36,
         -0.12,
@@ -1195,136 +1195,172 @@
   ],
   "signals": [
     {
-      "id": "signal_wxbgos2r",
+      "id": "signal_laje8hs6",
       "from": "ceo",
       "to": "chief-of-staff",
       "label": "directive",
-      "intensity": 0.839706682,
-      "weight": 0.839706682,
-      "decay": 0.0801759908,
+      "intensity": 0.8307514130910306,
+      "weight": 0.8307299861820613,
+      "decay": 0.085536296,
       "themeTags": [
         "leadership",
         "execution"
       ]
     },
     {
-      "id": "signal_l9978je8",
+      "id": "signal_aplj989i",
       "from": "chief-of-staff",
       "to": "assistant-dispatch",
       "label": "routing",
-      "intensity": 0.819706682,
-      "weight": 0.819706682,
-      "decay": 0.0801759908,
+      "intensity": 0.8107514130910306,
+      "weight": 0.8107299861820613,
+      "decay": 0.085536296,
       "themeTags": [
         "routing",
         "coordination"
       ]
     },
     {
-      "id": "signal_15l29zwc",
+      "id": "signal_9287s0oc",
       "from": "automation",
       "to": "engineering",
       "label": "execution",
-      "intensity": 0.779706682,
-      "weight": 0.779706682,
-      "decay": 0.0801759908,
+      "intensity": 0.7707514130910307,
+      "weight": 0.7707299861820613,
+      "decay": 0.085536296,
       "themeTags": [
         "build",
         "execution"
       ]
     },
     {
-      "id": "signal_fdpvkqfv",
+      "id": "signal_g493gy83",
       "from": "assistant-dispatch",
       "to": "automation",
       "label": "workflow",
-      "intensity": 0.739706682,
-      "weight": 0.739706682,
-      "decay": 0.0801759908,
+      "intensity": 0.7307514130910306,
+      "weight": 0.7307299861820613,
+      "decay": 0.085536296,
       "themeTags": [
         "workflow",
         "delegation"
       ]
     },
     {
-      "id": "signal_1qjqidqg",
+      "id": "signal_iwesilzg",
       "from": "coo",
       "to": "operations",
       "label": "execution pull",
-      "intensity": 0.729706682,
-      "weight": 0.729706682,
-      "decay": 0.0801759908,
+      "intensity": 0.7207514130910306,
+      "weight": 0.7207299861820613,
+      "decay": 0.085536296,
       "themeTags": [
         "operations",
         "follow-through"
       ]
     },
     {
-      "id": "signal_k2zxtbpw",
+      "id": "signal_0v4khljk",
       "from": "product",
       "to": "engineering",
       "label": "build lane",
-      "intensity": 0.719706682,
-      "weight": 0.719706682,
-      "decay": 0.0801759908,
+      "intensity": 0.7107514130910306,
+      "weight": 0.7107299861820613,
+      "decay": 0.085536296,
       "themeTags": [
         "product",
         "build"
       ]
     },
     {
-      "id": "signal_ail1jla9",
+      "id": "signal_u1u7mefj",
       "from": "voice-comms",
       "to": "assistant-dispatch",
       "label": "transcript",
-      "intensity": 0.6797066820000001,
-      "weight": 0.6797066820000001,
-      "decay": 0.0801759908,
+      "intensity": 0.6707514130910307,
+      "weight": 0.6707299861820614,
+      "decay": 0.085536296,
       "themeTags": [
         "voice",
         "capture"
       ]
     },
     {
-      "id": "signal_icd1q4az",
+      "id": "signal_thhh7dz7",
       "from": "research",
       "to": "strategy",
       "label": "evidence",
-      "intensity": 0.659706682,
-      "weight": 0.659706682,
-      "decay": 0.0801759908,
+      "intensity": 0.6507514130910307,
+      "weight": 0.6507299861820613,
+      "decay": 0.085536296,
       "themeTags": [
         "research",
         "strategy"
       ]
     },
     {
-      "id": "signal_ogky1tkd",
+      "id": "signal_41n3b2pp",
       "from": "memory",
       "to": "ceo",
       "label": "continuity",
-      "intensity": 0.639706682,
-      "weight": 0.639706682,
-      "decay": 0.0801759908,
+      "intensity": 0.6307514130910307,
+      "weight": 0.6307299861820613,
+      "decay": 0.085536296,
       "themeTags": [
         "memory",
         "executive"
       ]
     },
     {
-      "id": "signal_5ott7j76",
+      "id": "signal_r4ayavtl",
       "from": "assistant-dispatch",
       "to": "chief-of-staff",
       "label": "memory lane",
-      "intensity": 0.4102,
-      "weight": 0.3704,
-      "decay": 0.12,
+      "intensity": 0.5596302911856059,
+      "weight": 0.4651697097045452,
+      "decay": 0.06054547639999998,
       "themeTags": [
         "memory"
       ]
     }
   ],
   "memoryArtifacts": [
+    {
+      "id": "memory_z4ovy1ub",
+      "layer": "task",
+      "title": "Whisper adapter not configured yet. This plac...",
+      "summary": "Stored quietly with agent ownership and resumable context.",
+      "tags": [
+        "assistant-dispatch",
+        "chief-of-staff"
+      ],
+      "createdAt": "2026-04-14T17:01:00.263Z",
+      "updatedAt": "2026-04-14T17:01:00.263Z"
+    },
+    {
+      "id": "memory_75svhnda",
+      "layer": "task",
+      "title": "Whisper adapter not configured yet. This plac...",
+      "summary": "Stored quietly with agent ownership and resumable context.",
+      "tags": [
+        "assistant-dispatch",
+        "chief-of-staff"
+      ],
+      "createdAt": "2026-04-14T17:00:56.482Z",
+      "updatedAt": "2026-04-14T17:00:56.482Z"
+    },
+    {
+      "id": "memory_xjj98oyl",
+      "layer": "task",
+      "title": "Whisper adapter not configured yet. This plac...",
+      "summary": "Stored quietly with agent ownership and resumable context.",
+      "tags": [
+        "assistant-dispatch",
+        "chief-of-staff"
+      ],
+      "createdAt": "2026-04-14T17:00:55.826Z",
+      "updatedAt": "2026-04-14T17:00:55.826Z"
+    },
     {
       "id": "memory_6w59k395",
       "layer": "task",
@@ -1415,6 +1451,175 @@
   ],
   "taskThreads": [
     {
+      "id": "task_rvc5ff93",
+      "title": "Whisper adapter not configured yet. This plac...",
+      "description": "Whisper adapter not configured yet. This placeholder transcript confirms the voice lane and storage path are active.",
+      "origin": "voice",
+      "status": "researching",
+      "urgency": "passive",
+      "assignedAgentIds": [
+        "assistant-dispatch",
+        "chief-of-staff"
+      ],
+      "escalationChannels": [
+        "in_app"
+      ],
+      "summary": "Stored quietly with agent ownership and resumable context.",
+      "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+      "createdAt": "2026-04-14T17:01:00.248Z",
+      "updatedAt": "2026-04-14T19:01:55.034Z",
+      "salience": 0.6197834171692502,
+      "revisitCount": 0,
+      "completionScore": 0,
+      "decay": 0.13345326416666664,
+      "emotionalWeight": 0.375,
+      "themeTags": [
+        "general",
+        "memory"
+      ],
+      "lastTouchedAt": "2026-04-14T19:01:55.034Z",
+      "reasoningTrace": {
+        "id": "reason_mk4myvgd",
+        "leadAgentId": "assistant-dispatch",
+        "supportingAgentIds": [
+          "chief-of-staff"
+        ],
+        "verdict": "High-confidence execution path. Proceed with background work and lightweight updates.",
+        "consensusScore": 0.96,
+        "createdAt": "2026-04-14T17:01:00.248Z",
+        "sources": [
+          {
+            "type": "global_knowledge",
+            "confidence": 0.9099999999999999,
+            "summary": "The request resembles an ongoing product or research track that can be decomposed into agent workstreams."
+          },
+          {
+            "type": "local_memory",
+            "confidence": 0.94,
+            "summary": "Recent local memory artifacts reinforce continuity with Whisper adapter not configured yet. This plac..., Whisper adapter not configured yet. This plac...."
+          },
+          {
+            "type": "behavioral_intent",
+            "confidence": 0.97,
+            "summary": "The active user profile suggests adhd founder behavior, so the system should reduce friction and keep momentum without demanding constant follow-up."
+          }
+        ]
+      },
+      "dormant": false
+    },
+    {
+      "id": "task_w9h45zlj",
+      "title": "Whisper adapter not configured yet. This plac...",
+      "description": "Whisper adapter not configured yet. This placeholder transcript confirms the voice lane and storage path are active.",
+      "origin": "voice",
+      "status": "researching",
+      "urgency": "passive",
+      "assignedAgentIds": [
+        "assistant-dispatch",
+        "chief-of-staff"
+      ],
+      "escalationChannels": [
+        "in_app"
+      ],
+      "summary": "Stored quietly with agent ownership and resumable context.",
+      "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+      "createdAt": "2026-04-14T17:00:56.448Z",
+      "updatedAt": "2026-04-14T17:00:56.448Z",
+      "salience": 0.4674803536935358,
+      "revisitCount": 0,
+      "completionScore": 0,
+      "decay": 0.1670665398611111,
+      "emotionalWeight": 0.48,
+      "themeTags": [
+        "general"
+      ],
+      "lastTouchedAt": "2026-04-14T17:00:56.448Z",
+      "reasoningTrace": {
+        "id": "reason_5lkbeq4n",
+        "leadAgentId": "assistant-dispatch",
+        "supportingAgentIds": [
+          "chief-of-staff"
+        ],
+        "verdict": "High-confidence execution path. Proceed with background work and lightweight updates.",
+        "consensusScore": 0.96,
+        "createdAt": "2026-04-14T17:00:56.448Z",
+        "sources": [
+          {
+            "type": "global_knowledge",
+            "confidence": 0.9099999999999999,
+            "summary": "The request resembles an ongoing product or research track that can be decomposed into agent workstreams."
+          },
+          {
+            "type": "local_memory",
+            "confidence": 0.94,
+            "summary": "Recent local memory artifacts reinforce continuity with Whisper adapter not configured yet. This plac..., HI."
+          },
+          {
+            "type": "behavioral_intent",
+            "confidence": 0.97,
+            "summary": "The active user profile suggests adhd founder behavior, so the system should reduce friction and keep momentum without demanding constant follow-up."
+          }
+        ]
+      },
+      "dormant": false
+    },
+    {
+      "id": "task_ajf4q49u",
+      "title": "Whisper adapter not configured yet. This plac...",
+      "description": "Whisper adapter not configured yet. This placeholder transcript confirms the voice lane and storage path are active.",
+      "origin": "voice",
+      "status": "researching",
+      "urgency": "passive",
+      "assignedAgentIds": [
+        "assistant-dispatch",
+        "chief-of-staff"
+      ],
+      "escalationChannels": [
+        "in_app"
+      ],
+      "summary": "Stored quietly with agent ownership and resumable context.",
+      "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+      "createdAt": "2026-04-14T17:00:55.807Z",
+      "updatedAt": "2026-04-14T17:00:55.807Z",
+      "salience": 0.4595107036656149,
+      "revisitCount": 0,
+      "completionScore": 0,
+      "decay": 0.16706778625,
+      "emotionalWeight": 0.48,
+      "themeTags": [
+        "general"
+      ],
+      "lastTouchedAt": "2026-04-14T17:00:55.807Z",
+      "reasoningTrace": {
+        "id": "reason_g3q2krkk",
+        "leadAgentId": "assistant-dispatch",
+        "supportingAgentIds": [
+          "chief-of-staff"
+        ],
+        "verdict": "High-confidence execution path. Proceed with background work and lightweight updates.",
+        "consensusScore": 0.96,
+        "createdAt": "2026-04-14T17:00:55.807Z",
+        "sources": [
+          {
+            "type": "global_knowledge",
+            "confidence": 0.9099999999999999,
+            "summary": "The request resembles an ongoing product or research track that can be decomposed into agent workstreams."
+          },
+          {
+            "type": "local_memory",
+            "confidence": 0.94,
+            "summary": "Recent local memory artifacts reinforce continuity with HI, MAKE MY BED."
+          },
+          {
+            "type": "behavioral_intent",
+            "confidence": 0.97,
+            "summary": "The active user profile suggests adhd founder behavior, so the system should reduce friction and keep momentum without demanding constant follow-up."
+          }
+        ]
+      },
+      "dormant": false
+    },
+    {
       "id": "task_0kwxvcxy",
       "title": "HI",
       "description": "HI",
@@ -1431,17 +1636,17 @@
       "summary": "Stored quietly with agent ownership and resumable context.",
       "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
       "createdAt": "2026-04-14T16:34:04.850Z",
-      "updatedAt": "2026-04-14T16:34:11.343Z",
-      "salience": 0.5115911983777778,
+      "updatedAt": "2026-04-14T19:01:55.034Z",
+      "salience": 0.7232471939284312,
       "revisitCount": 0,
       "completionScore": 0,
-      "decay": 0.1432063126388889,
-      "emotionalWeight": 0.41000000000000003,
+      "decay": 0.10142379000000001,
+      "emotionalWeight": 0.34875,
       "themeTags": [
         "general",
         "memory"
       ],
-      "lastTouchedAt": "2026-04-14T16:34:11.343Z",
+      "lastTouchedAt": "2026-04-14T19:01:55.034Z",
       "reasoningTrace": {
         "id": "reason_lswplfix",
         "leadAgentId": "assistant-dispatch",
@@ -1489,10 +1694,10 @@
       "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
       "createdAt": "2026-04-14T12:44:08.543Z",
       "updatedAt": "2026-04-14T12:44:08.543Z",
-      "salience": 0.8794866935,
+      "salience": 0.8637222717684155,
       "revisitCount": 1,
       "completionScore": 0.22,
-      "decay": 0.12042775541666666,
+      "decay": 0.13345627499999999,
       "emotionalWeight": 0.78,
       "themeTags": [
         "build",
@@ -1547,10 +1752,10 @@
       "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
       "createdAt": "2026-04-14T12:41:40.815Z",
       "updatedAt": "2026-04-14T12:41:40.815Z",
-      "salience": 0.8794866935,
+      "salience": 0.8637222717684155,
       "revisitCount": 1,
       "completionScore": 0.22,
-      "decay": 0.12042775541666666,
+      "decay": 0.13345627499999999,
       "emotionalWeight": 0.78,
       "themeTags": [
         "build",
@@ -1605,10 +1810,10 @@
       "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
       "createdAt": "2026-04-14T12:41:34.188Z",
       "updatedAt": "2026-04-14T12:41:34.188Z",
-      "salience": 0.8794866935,
+      "salience": 0.8637222717684155,
       "revisitCount": 1,
       "completionScore": 0.22,
-      "decay": 0.12042775541666666,
+      "decay": 0.13345627499999999,
       "emotionalWeight": 0.78,
       "themeTags": [
         "build",
@@ -1666,10 +1871,10 @@
       "nextStep": "Expand orchestration, persistence, and external comms without collapsing back into dashboard habits.",
       "createdAt": "2026-04-14T12:34:01.431Z",
       "updatedAt": "2026-04-14T12:34:01.431Z",
-      "salience": 0.8794866935,
+      "salience": 0.8637222717684155,
       "revisitCount": 1,
       "completionScore": 0.22,
-      "decay": 0.12042775541666666,
+      "decay": 0.13345627499999999,
       "emotionalWeight": 0.78,
       "themeTags": [
         "build",
@@ -1709,6 +1914,42 @@
     }
   ],
   "notifications": [
+    {
+      "id": "notice_stemqmrt",
+      "title": "Stored quietly: Whisper adapter not configured yet. This plac...",
+      "body": "Stored quietly with agent ownership and resumable context. Assigned: assistant-dispatch, chief-of-staff. Next: Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+      "urgency": "passive",
+      "channels": [
+        "in_app"
+      ],
+      "status": "stored",
+      "taskId": "task_rvc5ff93",
+      "createdAt": "2026-04-14T17:01:00.248Z"
+    },
+    {
+      "id": "notice_pjngrvei",
+      "title": "Stored quietly: Whisper adapter not configured yet. This plac...",
+      "body": "Stored quietly with agent ownership and resumable context. Assigned: assistant-dispatch, chief-of-staff. Next: Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+      "urgency": "passive",
+      "channels": [
+        "in_app"
+      ],
+      "status": "stored",
+      "taskId": "task_w9h45zlj",
+      "createdAt": "2026-04-14T17:00:56.448Z"
+    },
+    {
+      "id": "notice_476r839s",
+      "title": "Stored quietly: Whisper adapter not configured yet. This plac...",
+      "body": "Stored quietly with agent ownership and resumable context. Assigned: assistant-dispatch, chief-of-staff. Next: Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+      "urgency": "passive",
+      "channels": [
+        "in_app"
+      ],
+      "status": "stored",
+      "taskId": "task_ajf4q49u",
+      "createdAt": "2026-04-14T17:00:55.807Z"
+    },
     {
       "id": "notice_y30j8xd0",
       "title": "Stored quietly: HI",
@@ -1777,12 +2018,12 @@
         "from": "ceo",
         "to": "chief-of-staff",
         "label": "directive",
-        "weight": 0.839706682,
-        "salience": 0.839706682,
+        "weight": 0.8307299861820613,
+        "salience": 0.83077284,
         "activations": 1,
         "successfulActivations": 0,
         "lastActivatedAt": "2026-04-14T16:26:51.366Z",
-        "decay": 0.0801759908,
+        "decay": 0.085536296,
         "themeTags": [
           "leadership",
           "execution"
@@ -1793,12 +2034,12 @@
         "from": "chief-of-staff",
         "to": "assistant-dispatch",
         "label": "routing",
-        "weight": 0.819706682,
-        "salience": 0.819706682,
+        "weight": 0.8107299861820613,
+        "salience": 0.8107728399999999,
         "activations": 1,
         "successfulActivations": 0,
         "lastActivatedAt": "2026-04-14T16:26:51.366Z",
-        "decay": 0.0801759908,
+        "decay": 0.085536296,
         "themeTags": [
           "routing",
           "coordination"
@@ -1809,12 +2050,12 @@
         "from": "assistant-dispatch",
         "to": "automation",
         "label": "workflow",
-        "weight": 0.739706682,
-        "salience": 0.739706682,
+        "weight": 0.7307299861820613,
+        "salience": 0.73077284,
         "activations": 1,
         "successfulActivations": 0,
         "lastActivatedAt": "2026-04-14T16:26:51.366Z",
-        "decay": 0.0801759908,
+        "decay": 0.085536296,
         "themeTags": [
           "workflow",
           "delegation"
@@ -1825,12 +2066,12 @@
         "from": "automation",
         "to": "engineering",
         "label": "execution",
-        "weight": 0.779706682,
-        "salience": 0.779706682,
+        "weight": 0.7707299861820613,
+        "salience": 0.77077284,
         "activations": 1,
         "successfulActivations": 0,
         "lastActivatedAt": "2026-04-14T16:26:51.366Z",
-        "decay": 0.0801759908,
+        "decay": 0.085536296,
         "themeTags": [
           "build",
           "execution"
@@ -1841,12 +2082,12 @@
         "from": "memory",
         "to": "ceo",
         "label": "continuity",
-        "weight": 0.639706682,
-        "salience": 0.639706682,
+        "weight": 0.6307299861820613,
+        "salience": 0.63077284,
         "activations": 1,
         "successfulActivations": 0,
         "lastActivatedAt": "2026-04-14T16:26:51.366Z",
-        "decay": 0.0801759908,
+        "decay": 0.085536296,
         "themeTags": [
           "memory",
           "executive"
@@ -1857,12 +2098,12 @@
         "from": "voice-comms",
         "to": "assistant-dispatch",
         "label": "transcript",
-        "weight": 0.6797066820000001,
-        "salience": 0.6797066820000001,
+        "weight": 0.6707299861820614,
+        "salience": 0.67077284,
         "activations": 1,
         "successfulActivations": 0,
         "lastActivatedAt": "2026-04-14T16:26:51.366Z",
-        "decay": 0.0801759908,
+        "decay": 0.085536296,
         "themeTags": [
           "voice",
           "capture"
@@ -1873,12 +2114,12 @@
         "from": "research",
         "to": "strategy",
         "label": "evidence",
-        "weight": 0.659706682,
-        "salience": 0.659706682,
+        "weight": 0.6507299861820613,
+        "salience": 0.65077284,
         "activations": 1,
         "successfulActivations": 0,
         "lastActivatedAt": "2026-04-14T16:26:51.366Z",
-        "decay": 0.0801759908,
+        "decay": 0.085536296,
         "themeTags": [
           "research",
           "strategy"
@@ -1889,12 +2130,12 @@
         "from": "product",
         "to": "engineering",
         "label": "build lane",
-        "weight": 0.719706682,
-        "salience": 0.719706682,
+        "weight": 0.7107299861820613,
+        "salience": 0.71077284,
         "activations": 1,
         "successfulActivations": 0,
         "lastActivatedAt": "2026-04-14T16:26:51.366Z",
-        "decay": 0.0801759908,
+        "decay": 0.085536296,
         "themeTags": [
           "product",
           "build"
@@ -1905,12 +2146,12 @@
         "from": "coo",
         "to": "operations",
         "label": "execution pull",
-        "weight": 0.729706682,
-        "salience": 0.729706682,
+        "weight": 0.7207299861820613,
+        "salience": 0.72077284,
         "activations": 1,
         "successfulActivations": 0,
         "lastActivatedAt": "2026-04-14T16:26:51.366Z",
-        "decay": 0.0801759908,
+        "decay": 0.085536296,
         "themeTags": [
           "operations",
           "follow-through"
@@ -1921,12 +2162,12 @@
         "from": "assistant-dispatch",
         "to": "chief-of-staff",
         "label": "memory lane",
-        "weight": 0.3704,
-        "salience": 0.45,
-        "activations": 1,
+        "weight": 0.4651697097045452,
+        "salience": 0.6540908726666665,
+        "activations": 4,
         "successfulActivations": 0,
-        "lastActivatedAt": "2026-04-14T16:34:11.343Z",
-        "decay": 0.12,
+        "lastActivatedAt": "2026-04-14T19:01:55.034Z",
+        "decay": 0.06054547639999998,
         "themeTags": [
           "memory"
         ]
@@ -1938,7 +2179,7 @@
         "label": "Build Cortex",
         "theme": "build",
         "strength": 0.72,
-        "salience": 0.7595111366666667,
+        "salience": 0.7446214000000001,
         "taskIds": [],
         "memoryIds": [],
         "lastConsolidatedAt": "2026-04-14T16:26:51.366Z"
@@ -1948,7 +2189,7 @@
         "label": "Research Halo",
         "theme": "research",
         "strength": 0.68,
-        "salience": 0.7195111366666667,
+        "salience": 0.7046214000000001,
         "taskIds": [],
         "memoryIds": [],
         "lastConsolidatedAt": "2026-04-14T16:26:51.366Z"
@@ -1957,23 +2198,24 @@
         "id": "cluster_zi5ja2t0",
         "label": "Memory Cluster",
         "theme": "memory",
-        "strength": 0.34,
-        "salience": 0.38,
+        "strength": 0.44,
+        "salience": 0.53,
         "taskIds": [
-          "task_0kwxvcxy"
+          "task_0kwxvcxy",
+          "task_rvc5ff93"
         ],
         "memoryIds": [],
-        "lastConsolidatedAt": "2026-04-14T16:34:11.343Z"
+        "lastConsolidatedAt": "2026-04-14T19:01:55.034Z"
       }
     ],
     "behavioralPatterns": [
       {
         "id": "pattern_ael9gz4l",
         "theme": "memory",
-        "count": 1,
-        "momentum": 0.36,
+        "count": 4,
+        "momentum": 0.4356,
         "emotionalWeight": 0.34,
-        "lastSeenAt": "2026-04-14T16:34:11.343Z"
+        "lastSeenAt": "2026-04-14T19:01:55.034Z"
       }
     ],
     "cognitiveProfile": {
@@ -1993,10 +2235,51 @@
       "task_7ujnkzsl",
       "task_mgonakz1",
       "task_86lr986q",
-      "task_4pcxmzjj"
+      "task_4pcxmzjj",
+      "task_0kwxvcxy",
+      "task_rvc5ff93"
     ],
     "longTermMemoryTaskIds": [],
     "adaptationLog": [
+      {
+        "id": "adapt_t1348qfy",
+        "type": "message",
+        "createdAt": "2026-04-14T19:01:55.034Z",
+        "taskId": "task_rvc5ff93",
+        "agentId": "assistant-dispatch",
+        "themeTags": [
+          "memory"
+        ],
+        "emotionalWeight": 0.34,
+        "outcomeWeight": 0.42,
+        "summary": "message :: interval save"
+      },
+      {
+        "id": "adapt_6lvvqg6l",
+        "type": "message",
+        "createdAt": "2026-04-14T17:01:06.303Z",
+        "taskId": "task_rvc5ff93",
+        "agentId": "assistant-dispatch",
+        "themeTags": [
+          "memory"
+        ],
+        "emotionalWeight": 0.34,
+        "outcomeWeight": 0.42,
+        "summary": "message :: interval save"
+      },
+      {
+        "id": "adapt_hlv3ostw",
+        "type": "message",
+        "createdAt": "2026-04-14T17:00:53.524Z",
+        "taskId": "task_0kwxvcxy",
+        "agentId": "assistant-dispatch",
+        "themeTags": [
+          "memory"
+        ],
+        "emotionalWeight": 0.34,
+        "outcomeWeight": 0.42,
+        "summary": "message :: interaction save"
+      },
       {
         "id": "adapt_0zbkjxj5",
         "type": "message",

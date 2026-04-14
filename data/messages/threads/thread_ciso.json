@@ -2,14 +2,14 @@
   "id": "thread_ciso",
   "agentId": "ciso",
   "title": "CISO Thread",
-  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "updatedAt": "2026-04-14T19:55:06.497Z",
   "messages": [
     {
-      "id": "msg_6f1yoxa0",
+      "id": "msg_rbqcrdep",
       "threadId": "thread_ciso",
       "author": "agent",
       "agentId": "ciso",
-      "createdAt": "2026-04-14T16:27:30.564Z",
+      "createdAt": "2026-04-14T19:55:06.497Z",
       "state": "monitoring",
       "linkedAgents": [
         "cto",

@@ -2,14 +2,14 @@
   "id": "thread_research",
   "agentId": "research",
   "title": "Research Thread",
-  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "updatedAt": "2026-04-14T19:55:06.497Z",
   "messages": [
     {
-      "id": "msg_3n07e2vm",
+      "id": "msg_i8vv0742",
       "threadId": "thread_research",
       "author": "agent",
       "agentId": "research",
-      "createdAt": "2026-04-14T16:27:30.564Z",
+      "createdAt": "2026-04-14T19:55:06.497Z",
       "state": "thinking",
       "linkedAgents": [
         "chief-of-staff",

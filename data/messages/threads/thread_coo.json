@@ -2,14 +2,14 @@
   "id": "thread_coo",
   "agentId": "coo",
   "title": "COO Thread",
-  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "updatedAt": "2026-04-14T19:55:06.497Z",
   "messages": [
     {
-      "id": "msg_myxrhz9o",
+      "id": "msg_h2ujof9q",
       "threadId": "thread_coo",
       "author": "agent",
       "agentId": "coo",
-      "createdAt": "2026-04-14T16:27:30.564Z",
+      "createdAt": "2026-04-14T19:55:06.497Z",
       "state": "executing",
       "linkedAgents": [
         "ceo",

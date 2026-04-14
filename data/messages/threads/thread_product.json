@@ -2,14 +2,14 @@
   "id": "thread_product",
   "agentId": "product",
   "title": "Product Thread",
-  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "updatedAt": "2026-04-14T19:55:06.497Z",
   "messages": [
     {
-      "id": "msg_rkeruclc",
+      "id": "msg_05mqrpcm",
       "threadId": "thread_product",
       "author": "agent",
       "agentId": "product",
-      "createdAt": "2026-04-14T16:27:30.564Z",
+      "createdAt": "2026-04-14T19:55:06.497Z",
       "state": "executing",
       "linkedAgents": [
         "cto",

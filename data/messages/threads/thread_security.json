@@ -2,14 +2,14 @@
   "id": "thread_security",
   "agentId": "security",
   "title": "Security Thread",
-  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "updatedAt": "2026-04-14T19:55:06.497Z",
   "messages": [
     {
-      "id": "msg_2if5ica3",
+      "id": "msg_wm0gzy7h",
       "threadId": "thread_security",
       "author": "agent",
       "agentId": "security",
-      "createdAt": "2026-04-14T16:27:30.564Z",
+      "createdAt": "2026-04-14T19:55:06.497Z",
       "state": "monitoring",
       "linkedAgents": [
         "ciso",

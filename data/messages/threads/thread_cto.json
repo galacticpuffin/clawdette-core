@@ -2,14 +2,14 @@
   "id": "thread_cto",
   "agentId": "cto",
   "title": "CTO Thread",
-  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "updatedAt": "2026-04-14T19:55:06.497Z",
   "messages": [
     {
-      "id": "msg_nhf2tjyo",
+      "id": "msg_lgszd81q",
       "threadId": "thread_cto",
       "author": "agent",
       "agentId": "cto",
-      "createdAt": "2026-04-14T16:27:30.564Z",
+      "createdAt": "2026-04-14T19:55:06.497Z",
       "state": "thinking",
       "linkedAgents": [
         "engineering",

@@ -2,14 +2,14 @@
   "id": "thread_strategy",
   "agentId": "strategy",
   "title": "Strategy Thread",
-  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "updatedAt": "2026-04-14T19:55:06.497Z",
   "messages": [
     {
-      "id": "msg_u7vk5ntb",
+      "id": "msg_6my7kclx",
       "threadId": "thread_strategy",
       "author": "agent",
       "agentId": "strategy",
-      "createdAt": "2026-04-14T16:27:30.564Z",
+      "createdAt": "2026-04-14T19:55:06.497Z",
       "state": "thinking",
       "linkedAgents": [
         "ceo",

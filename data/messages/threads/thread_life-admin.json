@@ -2,14 +2,14 @@
   "id": "thread_life-admin",
   "agentId": "life-admin",
   "title": "Life Admin Thread",
-  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "updatedAt": "2026-04-14T19:55:06.497Z",
   "messages": [
     {
-      "id": "msg_nzee6gte",
+      "id": "msg_hxpv2glp",
       "threadId": "thread_life-admin",
       "author": "agent",
       "agentId": "life-admin",
-      "createdAt": "2026-04-14T16:27:30.564Z",
+      "createdAt": "2026-04-14T19:55:06.497Z",
       "state": "idle",
       "linkedAgents": [
         "memory",
