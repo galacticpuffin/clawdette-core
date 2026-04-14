@@ -112,8 +112,9 @@ function normalizeCoreState(rawState: unknown, baseState: CoreState): { state: C
     repaired = true;
   }
 
-  const taskThreads = Array.isArray(candidate.taskThreads)
-    ? candidate.taskThreads.map((task) => normalizeTask(task, baseState.taskThreads[0])).filter(Boolean) as TaskThread[]
+  const taskFallback = baseState.taskThreads[0];
+  const taskThreads = Array.isArray(candidate.taskThreads) && taskFallback != null
+    ? candidate.taskThreads.map((task) => normalizeTask(task, taskFallback)).filter(Boolean) as TaskThread[]
     : (repaired = true, baseState.taskThreads);
 
   const normalized: CoreState = {
@@ -203,7 +204,17 @@ function normalizeTask(rawTask: unknown, fallback: TaskThread) {
     createdAt: typeof task.createdAt === "string" ? task.createdAt : fallback.createdAt,
     updatedAt: typeof task.updatedAt === "string" ? task.updatedAt : fallback.updatedAt,
     lastTouchedAt: typeof task.lastTouchedAt === "string" ? task.lastTouchedAt : fallback.lastTouchedAt,
+    salience: safeNum(task.salience, fallback.salience),
+    decay: safeNum(task.decay, fallback.decay),
+    emotionalWeight: safeNum(task.emotionalWeight, fallback.emotionalWeight),
+    completionScore: safeNum(task.completionScore, fallback.completionScore),
+    revisitCount: safeNum(task.revisitCount, fallback.revisitCount),
   };
+}
+
+function safeNum(value: unknown, fallback: number): number {
+  const n = Number(value);
+  return Number.isFinite(n) ? n : fallback;
 }
 
 function normalizeThread(rawThread: AgentThread, fallback: AgentThread) {

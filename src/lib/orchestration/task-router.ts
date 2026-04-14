@@ -131,7 +131,7 @@ function matchesAny(text: string, terms: string[]) {
 }
 
 function buildInitialSalience(urgency: UrgencyLevel, themeTags: string[], state: CoreState) {
-  const repeatedThemes = state.neuroplasticity.behavioralPatterns.filter((pattern) => themeTags.includes(pattern.theme));
+  const repeatedThemes = (state.neuroplasticity?.behavioralPatterns ?? []).filter((pattern) => themeTags.includes(pattern.theme));
   const learnedBoost = repeatedThemes.reduce((sum, pattern) => sum + pattern.momentum * 0.08, 0);
   const urgencyBase = urgency === "urgent" ? 0.92 : urgency === "active" ? 0.76 : urgency === "summary" ? 0.62 : 0.44;
   return Math.min(1, urgencyBase + learnedBoost);

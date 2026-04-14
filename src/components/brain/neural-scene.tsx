@@ -205,6 +205,11 @@ function NeuralPathway({ signal }: { signal: NeuralSignal }) {
     return { tubeGeo, linePoints: [startArr, midArr, endArr] };
   }, [signal]);
 
+  // Dispose TubeGeometry on unmount or signal change to prevent GPU memory leak
+  useEffect(() => {
+    return () => { data.tubeGeo?.dispose(); };
+  }, [data.tubeGeo]);
+
   useFrame(({ clock }) => {
     if (!meshRef.current) return;
     const mat = meshRef.current.material as THREE.MeshStandardMaterial;
@@ -371,31 +376,13 @@ function AgentNodeMesh({
   );
 }
 
-// ── Progressive text labels (zoom-aware, in-world) ───────────────────────────
-
-function NodeLabels({ agents, activeAgentId, cameraZ }: { agents: AgentNode[]; activeAgentId: string; cameraZ: number }) {
-  // Labels only visible when zoomed in enough
-  if (cameraZ > 5.0) return null;
-
-  return (
-    <>
-      {agents.map((agent) => {
-        const isActive = agent.id === activeAgentId;
-        const showLabel = cameraZ < 4.2 || isActive;
-        if (!showLabel) return null;
-
-        return (
-          <group key={agent.id} position={[agent.position[0], agent.position[1] + 0.08, agent.position[2]]}>
-            {/* Labels are rendered as HTML via r3f Html — not used here to keep pure 3D.
-                Instead we drive label opacity from camera distance in the overlay layer. */}
-          </group>
-        );
-      })}
-    </>
-  );
-}
+// NodeLabels intentionally removed — labels are rendered as HTML overlay in neural-core-app
+// to keep the Three.js scene pure GPU with no Html reconciler overhead.
 
 // ── Post-processing stack ─────────────────────────────────────────────────────
+
+// Stable Vector2 instance — created once, never recreated on render
+const CHROMA_OFFSET = new THREE.Vector2(0.0006, 0.0006);
 
 function PostFX() {
   return (
@@ -408,7 +395,7 @@ function PostFX() {
       />
       <ChromaticAberration
         blendFunction={BlendFunction.NORMAL}
-        offset={new THREE.Vector2(0.0006, 0.0006)}
+        offset={CHROMA_OFFSET}
         radialModulation={false}
         modulationOffset={0}
       />
@@ -508,8 +495,6 @@ export function NeuralScene({
           onSelect={onSelect}
         />
       ))}
-
-      <NodeLabels agents={agents} activeAgentId={activeAgentId} cameraZ={cameraZ.current} />
 
       <ZoomWatcher onZoomChange={onZoomChange ?? (() => {})} />
       <CameraDistanceTracker onDistance={handleDistance} />

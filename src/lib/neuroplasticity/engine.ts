@@ -131,12 +131,13 @@ export function applyAdaptationEvent(state: CoreState, request: AdaptationReques
       : task,
   );
 
+  const np = state.neuroplasticity ?? createInitialNeuroplasticState();
   const neuroplasticity: NeuroplasticState = {
-    ...state.neuroplasticity,
+    ...np,
     pathways: reinforcePathways(decayedPathways, request, state, themeTags, event.outcomeWeight),
-    memoryClusters: updateMemoryClusters(state.neuroplasticity.memoryClusters, taskThreads, themeTags, timestamp),
-    behavioralPatterns: updateBehavioralPatterns(state.neuroplasticity.behavioralPatterns, themeTags, event, timestamp),
-    cognitiveProfile: updateCognitiveProfile(state.neuroplasticity.cognitiveProfile, request, themeTags),
+    memoryClusters: updateMemoryClusters(np.memoryClusters, taskThreads, themeTags, timestamp),
+    behavioralPatterns: updateBehavioralPatterns(np.behavioralPatterns, themeTags, event, timestamp),
+    cognitiveProfile: updateCognitiveProfile(np.cognitiveProfile, request, themeTags),
     workingMemoryTaskIds: taskThreads
       .filter((task) => task.salience >= 0.58 && !task.dormant)
       .sort((a, b) => b.salience - a.salience)
@@ -146,7 +147,7 @@ export function applyAdaptationEvent(state: CoreState, request: AdaptationReques
       .filter((task) => task.revisitCount >= 2 || task.completionScore >= 0.72)
       .slice(0, 12)
       .map((task) => task.id),
-    adaptationLog: [event, ...state.neuroplasticity.adaptationLog].slice(0, 64),
+    adaptationLog: [event, ...(np.adaptationLog)].slice(0, 64),
   };
 
   const agents = state.agents.map((agent) => {
@@ -437,6 +438,7 @@ function intersects(left: string[], right: string[]) {
 function hoursBetween(previousIso: string, currentIso: string) {
   const previous = new Date(previousIso).getTime();
   const current = new Date(currentIso).getTime();
+  if (!Number.isFinite(previous) || !Number.isFinite(current)) return 0;
   return Math.max(0, (current - previous) / (1000 * 60 * 60));
 }
 
@@ -448,6 +450,7 @@ function toLabel(theme: string) {
 }
 
 function clampNumber(value: number, min: number, max: number) {
+  if (!Number.isFinite(value)) return min;
   return Math.max(min, Math.min(max, value));
 }
 
