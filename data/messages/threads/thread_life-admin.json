@@ -1,0 +1,23 @@
+{
+  "id": "thread_life-admin",
+  "agentId": "life-admin",
+  "title": "Life Admin Thread",
+  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "messages": [
+    {
+      "id": "msg_nzee6gte",
+      "threadId": "thread_life-admin",
+      "author": "agent",
+      "agentId": "life-admin",
+      "createdAt": "2026-04-14T16:27:30.564Z",
+      "state": "idle",
+      "linkedAgents": [
+        "memory",
+        "assistant-dispatch",
+        "voice-comms"
+      ],
+      "content": "Life Admin online. Handles personal logistics, reminders, and real-world continuity.",
+      "output": "Ready for directive routing."
+    }
+  ]
+}

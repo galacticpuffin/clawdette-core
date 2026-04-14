@@ -1,0 +1,23 @@
+{
+  "id": "thread_sales",
+  "agentId": "sales",
+  "title": "Sales Thread",
+  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "messages": [
+    {
+      "id": "msg_ixub3ptf",
+      "threadId": "thread_sales",
+      "author": "agent",
+      "agentId": "sales",
+      "createdAt": "2026-04-14T16:27:30.564Z",
+      "state": "idle",
+      "linkedAgents": [
+        "cfo",
+        "marketing",
+        "operations"
+      ],
+      "content": "Sales online. Owns pipeline movement, outreach, and closing pressure.",
+      "output": "Ready for directive routing."
+    }
+  ]
+}

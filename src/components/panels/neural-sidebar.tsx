@@ -19,10 +19,10 @@ export function NeuralSidebar({
     <motion.aside
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
-      className="glass pointer-events-auto absolute left-6 top-28 z-30 h-[calc(100vh-11rem)] w-[320px] overflow-hidden rounded-[2.2rem]"
+      className="glass pointer-events-auto absolute left-[362px] top-28 z-30 h-[calc(100vh-12rem)] w-[280px] overflow-hidden rounded-[2.2rem]"
     >
-      <div className="h-full overflow-y-auto px-5 py-5">
-        <div className="text-[11px] uppercase tracking-[0.4em] text-pink-200/70">Executive Regions</div>
+      <div className="scrollbar-thin h-full overflow-y-auto px-5 py-5">
+        <div className="text-[11px] uppercase tracking-[0.4em] text-pink-200/70">Agent Constellation</div>
         <div className="mt-4 space-y-2">
           {agents.map((agent) => (
             <button

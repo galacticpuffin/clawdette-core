@@ -13,3 +13,7 @@ export function nowIso() {
 export function clamp(value: number, min: number, max: number) {
   return Math.max(min, Math.min(max, value));
 }
+
+export function sentenceCase(value: string) {
+  return value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
+}

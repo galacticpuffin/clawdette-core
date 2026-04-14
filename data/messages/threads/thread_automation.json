@@ -1,0 +1,23 @@
+{
+  "id": "thread_automation",
+  "agentId": "automation",
+  "title": "Automation Thread",
+  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "messages": [
+    {
+      "id": "msg_uwlc5yqt",
+      "threadId": "thread_automation",
+      "author": "agent",
+      "agentId": "automation",
+      "createdAt": "2026-04-14T16:27:30.564Z",
+      "state": "executing",
+      "linkedAgents": [
+        "operations",
+        "engineering",
+        "assistant-dispatch"
+      ],
+      "content": "Automation online. Runs workflows across tools, memory, and triggered actions.",
+      "output": "Ready for directive routing."
+    }
+  ]
+}

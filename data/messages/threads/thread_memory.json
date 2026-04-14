@@ -1,0 +1,23 @@
+{
+  "id": "thread_memory",
+  "agentId": "memory",
+  "title": "Memory Thread",
+  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "messages": [
+    {
+      "id": "msg_xod4w3pm",
+      "threadId": "thread_memory",
+      "author": "agent",
+      "agentId": "memory",
+      "createdAt": "2026-04-14T16:27:30.564Z",
+      "state": "monitoring",
+      "linkedAgents": [
+        "engineering",
+        "chief-of-staff",
+        "life-admin"
+      ],
+      "content": "Memory online. Maintains persistence, recall, summaries, and future continuation.",
+      "output": "Ready for directive routing."
+    }
+  ]
+}

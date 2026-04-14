@@ -23,16 +23,16 @@ export function AgentThreadPanel({
   const [draft, setDraft] = useState("");
 
   return (
-    <div className="pointer-events-auto absolute right-6 top-28 z-30 h-[calc(100vh-11rem)] w-[380px]">
+    <div className="pointer-events-auto absolute right-6 top-1/2 z-30 h-[540px] w-[340px] -translate-y-1/2">
       <AnimatePresence mode="wait">
         <motion.aside
           key={activeAgent?.id ?? "empty"}
           initial={{ opacity: 0, x: 24 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 24 }}
-          className="glass flex h-full flex-col overflow-hidden rounded-[2.2rem]"
+          className="flex h-full flex-col overflow-hidden rounded-[2.5rem] border border-pink-200/12 bg-[linear-gradient(180deg,rgba(10,4,13,0.08),rgba(10,2,12,0.36))] shadow-[0_0_60px_rgba(255,84,174,0.12)] backdrop-blur-2xl"
         >
-          <div className="border-b border-pink-100/10 px-5 py-5">
+          <div className="border-b border-pink-100/8 px-5 py-5">
             <div className="text-[11px] uppercase tracking-[0.4em] text-pink-200/70">Embedded Thread</div>
             <div className="mt-2 text-2xl text-pink-50">{activeAgent?.name ?? "Select an agent"}</div>
             <div className="mt-1 text-sm leading-6 text-pink-100/74">{activeAgent?.mission}</div>
@@ -64,6 +64,18 @@ export function AgentThreadPanel({
                   <span>{message.state ?? "active"}</span>
                 </div>
                 <div className="mt-2 text-sm leading-6 text-pink-50">{message.content}</div>
+                {message.linkedAgents?.length ? (
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {message.linkedAgents.map((linkedAgent) => (
+                      <span
+                        key={linkedAgent}
+                        className="rounded-full border border-pink-100/10 bg-pink-100/7 px-2 py-1 text-[10px] uppercase tracking-[0.2em] text-pink-100/60"
+                      >
+                        {linkedAgent}
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
                 {message.output ? (
                   <div className="mt-3 rounded-2xl bg-pink-100/6 px-3 py-2 text-xs leading-5 text-pink-100/72">
                     {message.output}
@@ -73,7 +85,7 @@ export function AgentThreadPanel({
             ))}
           </div>
 
-          <div className="border-t border-pink-100/10 p-4">
+          <div className="border-t border-pink-100/8 p-4">
             <div className="mb-3 flex gap-2">
               <button
                 type="button"
@@ -92,7 +104,7 @@ export function AgentThreadPanel({
               value={draft}
               onChange={(event) => setDraft(event.target.value)}
               placeholder="Directly instruct this intelligence..."
-              className="min-h-[110px] w-full rounded-[1.7rem] border border-pink-100/10 bg-black/18 px-4 py-3 text-sm text-pink-50 outline-none placeholder:text-pink-100/35"
+              className="min-h-[110px] w-full rounded-[1.7rem] border border-pink-100/8 bg-black/14 px-4 py-3 text-sm text-pink-50 outline-none placeholder:text-pink-100/35"
             />
             <button
               type="button"

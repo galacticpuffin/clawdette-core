@@ -1,0 +1,295 @@
+[
+  {
+    "id": "task_0kwxvcxy",
+    "title": "HI",
+    "description": "HI",
+    "origin": "quick_capture",
+    "status": "researching",
+    "urgency": "passive",
+    "assignedAgentIds": [
+      "assistant-dispatch",
+      "chief-of-staff"
+    ],
+    "escalationChannels": [
+      "in_app"
+    ],
+    "summary": "Stored quietly with agent ownership and resumable context.",
+    "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+    "createdAt": "2026-04-14T16:34:04.850Z",
+    "updatedAt": "2026-04-14T16:34:11.343Z",
+    "salience": 0.5115911983777778,
+    "revisitCount": 0,
+    "completionScore": 0,
+    "decay": 0.1432063126388889,
+    "emotionalWeight": 0.41000000000000003,
+    "themeTags": [
+      "general",
+      "memory"
+    ],
+    "lastTouchedAt": "2026-04-14T16:34:11.343Z",
+    "reasoningTrace": {
+      "id": "reason_lswplfix",
+      "leadAgentId": "assistant-dispatch",
+      "supportingAgentIds": [
+        "chief-of-staff"
+      ],
+      "verdict": "Promising path, but keep outputs framed as ongoing research until more evidence accumulates.",
+      "consensusScore": 0.745,
+      "createdAt": "2026-04-14T16:34:04.851Z",
+      "sources": [
+        {
+          "type": "global_knowledge",
+          "confidence": 0.695,
+          "summary": "The request resembles an ongoing product or research track that can be decomposed into agent workstreams."
+        },
+        {
+          "type": "local_memory",
+          "confidence": 0.725,
+          "summary": "Recent local memory artifacts reinforce continuity with MAKE MY BED, Whisper adapter not configured yet. This plac...."
+        },
+        {
+          "type": "behavioral_intent",
+          "confidence": 0.755,
+          "summary": "The active user profile suggests adhd founder behavior, so the system should reduce friction and keep momentum without demanding constant follow-up."
+        }
+      ]
+    },
+    "dormant": false
+  },
+  {
+    "id": "task_7ujnkzsl",
+    "title": "MAKE MY BED",
+    "description": "MAKE MY BED",
+    "origin": "quick_capture",
+    "status": "researching",
+    "urgency": "passive",
+    "assignedAgentIds": [
+      "assistant-dispatch",
+      "chief-of-staff"
+    ],
+    "escalationChannels": [
+      "in_app"
+    ],
+    "summary": "Stored quietly with agent ownership and resumable context.",
+    "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+    "createdAt": "2026-04-14T12:44:08.543Z",
+    "updatedAt": "2026-04-14T12:44:08.543Z",
+    "salience": 0.8794866935,
+    "revisitCount": 1,
+    "completionScore": 0.22,
+    "decay": 0.12042775541666666,
+    "emotionalWeight": 0.78,
+    "themeTags": [
+      "build",
+      "research",
+      "strategy"
+    ],
+    "lastTouchedAt": "2026-04-14T16:26:51.366Z",
+    "reasoningTrace": {
+      "id": "reason_2u4n2v9p",
+      "leadAgentId": "assistant-dispatch",
+      "supportingAgentIds": [
+        "chief-of-staff"
+      ],
+      "verdict": "Promising path, but keep outputs framed as ongoing research until more evidence accumulates.",
+      "consensusScore": 0.7675,
+      "createdAt": "2026-04-14T12:44:08.543Z",
+      "sources": [
+        {
+          "type": "global_knowledge",
+          "confidence": 0.7174999999999999,
+          "summary": "The request resembles an ongoing product or research track that can be decomposed into agent workstreams."
+        },
+        {
+          "type": "local_memory",
+          "confidence": 0.7474999999999999,
+          "summary": "Recent local memory artifacts reinforce continuity with Whisper adapter not configured yet. This plac..., Whisper adapter not configured yet. This plac...."
+        },
+        {
+          "type": "behavioral_intent",
+          "confidence": 0.7775,
+          "summary": "The active user profile suggests adhd founder behavior, so the system should reduce friction and keep momentum without demanding constant follow-up."
+        }
+      ]
+    },
+    "dormant": false
+  },
+  {
+    "id": "task_mgonakz1",
+    "title": "Whisper adapter not configured yet. This plac...",
+    "description": "Whisper adapter not configured yet. This placeholder transcript confirms the voice lane and storage path are active.",
+    "origin": "voice",
+    "status": "researching",
+    "urgency": "passive",
+    "assignedAgentIds": [
+      "assistant-dispatch",
+      "chief-of-staff"
+    ],
+    "escalationChannels": [
+      "in_app"
+    ],
+    "summary": "Stored quietly with agent ownership and resumable context.",
+    "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+    "createdAt": "2026-04-14T12:41:40.815Z",
+    "updatedAt": "2026-04-14T12:41:40.815Z",
+    "salience": 0.8794866935,
+    "revisitCount": 1,
+    "completionScore": 0.22,
+    "decay": 0.12042775541666666,
+    "emotionalWeight": 0.78,
+    "themeTags": [
+      "build",
+      "research",
+      "strategy"
+    ],
+    "lastTouchedAt": "2026-04-14T16:26:51.366Z",
+    "reasoningTrace": {
+      "id": "reason_7u6us918",
+      "leadAgentId": "assistant-dispatch",
+      "supportingAgentIds": [
+        "chief-of-staff"
+      ],
+      "verdict": "High-confidence execution path. Proceed with background work and lightweight updates.",
+      "consensusScore": 0.96,
+      "createdAt": "2026-04-14T12:41:40.815Z",
+      "sources": [
+        {
+          "type": "global_knowledge",
+          "confidence": 0.9099999999999999,
+          "summary": "The request resembles an ongoing product or research track that can be decomposed into agent workstreams."
+        },
+        {
+          "type": "local_memory",
+          "confidence": 0.94,
+          "summary": "Recent local memory artifacts reinforce continuity with Whisper adapter not configured yet. This plac..., Executive Orientation."
+        },
+        {
+          "type": "behavioral_intent",
+          "confidence": 0.97,
+          "summary": "The active user profile suggests adhd founder behavior, so the system should reduce friction and keep momentum without demanding constant follow-up."
+        }
+      ]
+    },
+    "dormant": false
+  },
+  {
+    "id": "task_86lr986q",
+    "title": "Whisper adapter not configured yet. This plac...",
+    "description": "Whisper adapter not configured yet. This placeholder transcript confirms the voice lane and storage path are active.",
+    "origin": "voice",
+    "status": "researching",
+    "urgency": "passive",
+    "assignedAgentIds": [
+      "assistant-dispatch",
+      "chief-of-staff"
+    ],
+    "escalationChannels": [
+      "in_app"
+    ],
+    "summary": "Stored quietly with agent ownership and resumable context.",
+    "nextStep": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+    "createdAt": "2026-04-14T12:41:34.188Z",
+    "updatedAt": "2026-04-14T12:41:34.188Z",
+    "salience": 0.8794866935,
+    "revisitCount": 1,
+    "completionScore": 0.22,
+    "decay": 0.12042775541666666,
+    "emotionalWeight": 0.78,
+    "themeTags": [
+      "build",
+      "research",
+      "strategy"
+    ],
+    "lastTouchedAt": "2026-04-14T16:26:51.366Z",
+    "reasoningTrace": {
+      "id": "reason_l6xube8q",
+      "leadAgentId": "assistant-dispatch",
+      "supportingAgentIds": [
+        "chief-of-staff"
+      ],
+      "verdict": "High-confidence execution path. Proceed with background work and lightweight updates.",
+      "consensusScore": 0.96,
+      "createdAt": "2026-04-14T12:41:34.189Z",
+      "sources": [
+        {
+          "type": "global_knowledge",
+          "confidence": 0.9099999999999999,
+          "summary": "The request resembles an ongoing product or research track that can be decomposed into agent workstreams."
+        },
+        {
+          "type": "local_memory",
+          "confidence": 0.94,
+          "summary": "Recent local memory artifacts reinforce continuity with Executive Orientation, Project Charter."
+        },
+        {
+          "type": "behavioral_intent",
+          "confidence": 0.97,
+          "summary": "The active user profile suggests adhd founder behavior, so the system should reduce friction and keep momentum without demanding constant follow-up."
+        }
+      ]
+    },
+    "dormant": false
+  },
+  {
+    "id": "task_4pcxmzjj",
+    "title": "Onboard CLAWDETTE CORE as a real product brain",
+    "description": "Keep evolving the system into a local-first but product-grade neural operating system for nonlinear thinkers.",
+    "origin": "system",
+    "status": "active",
+    "urgency": "active",
+    "assignedAgentIds": [
+      "assistant-dispatch",
+      "chief-of-staff",
+      "product",
+      "engineering"
+    ],
+    "escalationChannels": [
+      "in_app",
+      "sms"
+    ],
+    "summary": "Core product thread is active and continuously resumable.",
+    "nextStep": "Expand orchestration, persistence, and external comms without collapsing back into dashboard habits.",
+    "createdAt": "2026-04-14T12:34:01.431Z",
+    "updatedAt": "2026-04-14T12:34:01.431Z",
+    "salience": 0.8794866935,
+    "revisitCount": 1,
+    "completionScore": 0.22,
+    "decay": 0.12042775541666666,
+    "emotionalWeight": 0.78,
+    "themeTags": [
+      "build",
+      "research",
+      "strategy"
+    ],
+    "lastTouchedAt": "2026-04-14T16:26:51.366Z",
+    "reasoningTrace": {
+      "id": "reason_jvfdl3b7",
+      "leadAgentId": "chief-of-staff",
+      "supportingAgentIds": [
+        "product",
+        "engineering"
+      ],
+      "verdict": "This should be built as a product system with personal-first defaults and future multi-user seams.",
+      "consensusScore": 0.92,
+      "createdAt": "2026-04-14T12:34:01.431Z",
+      "sources": [
+        {
+          "type": "global_knowledge",
+          "confidence": 0.9,
+          "summary": "Neural UIs can stay expressive while the system behind them remains product-grade and modular."
+        },
+        {
+          "type": "local_memory",
+          "confidence": 0.91,
+          "summary": "Existing project memory already frames CLAWDETTE CORE as a persistent local-first intelligence system."
+        },
+        {
+          "type": "behavioral_intent",
+          "confidence": 0.94,
+          "summary": "The user wants a second mind that catches dropped threads and continues when attention moves elsewhere."
+        }
+      ]
+    },
+    "dormant": false
+  }
+]

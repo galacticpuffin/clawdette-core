@@ -1,0 +1,23 @@
+{
+  "id": "thread_strategy",
+  "agentId": "strategy",
+  "title": "Strategy Thread",
+  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "messages": [
+    {
+      "id": "msg_u7vk5ntb",
+      "threadId": "thread_strategy",
+      "author": "agent",
+      "agentId": "strategy",
+      "createdAt": "2026-04-14T16:27:30.564Z",
+      "state": "thinking",
+      "linkedAgents": [
+        "ceo",
+        "research",
+        "product"
+      ],
+      "content": "Strategy online. Owns prioritization frames, scenarios, and future sequencing.",
+      "output": "Ready for directive routing."
+    }
+  ]
+}

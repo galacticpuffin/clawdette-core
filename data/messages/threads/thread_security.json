@@ -1,0 +1,23 @@
+{
+  "id": "thread_security",
+  "agentId": "security",
+  "title": "Security Thread",
+  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "messages": [
+    {
+      "id": "msg_2if5ica3",
+      "threadId": "thread_security",
+      "author": "agent",
+      "agentId": "security",
+      "createdAt": "2026-04-14T16:27:30.564Z",
+      "state": "monitoring",
+      "linkedAgents": [
+        "ciso",
+        "engineering",
+        "system-monitor"
+      ],
+      "content": "Security online. Protects secrets, policies, and system trust lines.",
+      "output": "Ready for directive routing."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "notice_y30j8xd0",
+    "title": "Stored quietly: HI",
+    "body": "Stored quietly with agent ownership and resumable context. Assigned: assistant-dispatch, chief-of-staff. Next: Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+    "urgency": "passive",
+    "channels": [
+      "in_app"
+    ],
+    "status": "stored",
+    "taskId": "task_0kwxvcxy",
+    "createdAt": "2026-04-14T16:34:04.851Z"
+  },
+  {
+    "id": "notice_k44almnu",
+    "title": "Stored quietly: MAKE MY BED",
+    "body": "Stored quietly with agent ownership and resumable context. Assigned: assistant-dispatch, chief-of-staff. Next: Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+    "urgency": "passive",
+    "channels": [
+      "in_app"
+    ],
+    "status": "stored",
+    "taskId": "task_7ujnkzsl",
+    "createdAt": "2026-04-14T12:44:08.543Z"
+  },
+  {
+    "id": "notice_nzgzka4p",
+    "title": "Stored quietly: Whisper adapter not configured yet. This plac...",
+    "body": "Stored quietly with agent ownership and resumable context. Assigned: assistant-dispatch, chief-of-staff. Next: Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+    "urgency": "passive",
+    "channels": [
+      "in_app"
+    ],
+    "status": "stored",
+    "taskId": "task_mgonakz1",
+    "createdAt": "2026-04-14T12:41:40.815Z"
+  },
+  {
+    "id": "notice_oy68pirs",
+    "title": "Stored quietly: Whisper adapter not configured yet. This plac...",
+    "body": "Stored quietly with agent ownership and resumable context. Assigned: assistant-dispatch, chief-of-staff. Next: Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt.",
+    "urgency": "passive",
+    "channels": [
+      "in_app"
+    ],
+    "status": "stored",
+    "taskId": "task_86lr986q",
+    "createdAt": "2026-04-14T12:41:34.189Z"
+  },
+  {
+    "id": "notice_bl606lfv",
+    "title": "CLAWDETTE CORE online",
+    "body": "Local-first neural OS initialized with memory, agents, and resumable task continuity.",
+    "urgency": "summary",
+    "channels": [
+      "in_app",
+      "email"
+    ],
+    "status": "stored",
+    "createdAt": "2026-04-14T12:34:01.431Z"
+  }
+]

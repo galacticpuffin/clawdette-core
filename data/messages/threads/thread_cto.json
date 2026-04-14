@@ -1,0 +1,24 @@
+{
+  "id": "thread_cto",
+  "agentId": "cto",
+  "title": "CTO Thread",
+  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "messages": [
+    {
+      "id": "msg_nhf2tjyo",
+      "threadId": "thread_cto",
+      "author": "agent",
+      "agentId": "cto",
+      "createdAt": "2026-04-14T16:27:30.564Z",
+      "state": "thinking",
+      "linkedAgents": [
+        "engineering",
+        "security",
+        "product",
+        "system-monitor"
+      ],
+      "content": "CTO online. Directs platform evolution, orchestration logic, and model strategy.",
+      "output": "Ready for directive routing."
+    }
+  ]
+}

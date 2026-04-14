@@ -1,0 +1,23 @@
+{
+  "id": "thread_cmo",
+  "agentId": "cmo",
+  "title": "CMO Thread",
+  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "messages": [
+    {
+      "id": "msg_b4dj7dj6",
+      "threadId": "thread_cmo",
+      "author": "agent",
+      "agentId": "cmo",
+      "createdAt": "2026-04-14T16:27:30.564Z",
+      "state": "idle",
+      "linkedAgents": [
+        "marketing",
+        "creative",
+        "sales"
+      ],
+      "content": "CMO online. Shapes messaging, market perception, and content throughput.",
+      "output": "Ready for directive routing."
+    }
+  ]
+}

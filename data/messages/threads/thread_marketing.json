@@ -1,0 +1,23 @@
+{
+  "id": "thread_marketing",
+  "agentId": "marketing",
+  "title": "Marketing Thread",
+  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "messages": [
+    {
+      "id": "msg_fmrnig3i",
+      "threadId": "thread_marketing",
+      "author": "agent",
+      "agentId": "marketing",
+      "createdAt": "2026-04-14T16:27:30.564Z",
+      "state": "idle",
+      "linkedAgents": [
+        "cmo",
+        "sales",
+        "creative"
+      ],
+      "content": "Marketing online. Activates campaigns, narrative angles, and demand generation.",
+      "output": "Ready for directive routing."
+    }
+  ]
+}

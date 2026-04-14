@@ -1,0 +1,23 @@
+{
+  "id": "thread_ciso",
+  "agentId": "ciso",
+  "title": "CISO Thread",
+  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "messages": [
+    {
+      "id": "msg_6f1yoxa0",
+      "threadId": "thread_ciso",
+      "author": "agent",
+      "agentId": "ciso",
+      "createdAt": "2026-04-14T16:27:30.564Z",
+      "state": "monitoring",
+      "linkedAgents": [
+        "cto",
+        "system-monitor",
+        "automation"
+      ],
+      "content": "CISO online. Maintains permission boundaries, trust, and operational safety.",
+      "output": "Ready for directive routing."
+    }
+  ]
+}

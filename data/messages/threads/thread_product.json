@@ -1,0 +1,24 @@
+{
+  "id": "thread_product",
+  "agentId": "product",
+  "title": "Product Thread",
+  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "messages": [
+    {
+      "id": "msg_rkeruclc",
+      "threadId": "thread_product",
+      "author": "agent",
+      "agentId": "product",
+      "createdAt": "2026-04-14T16:27:30.564Z",
+      "state": "executing",
+      "linkedAgents": [
+        "cto",
+        "strategy",
+        "engineering",
+        "creative"
+      ],
+      "content": "Product online. Turns strategic objectives into structured systems and experiences.",
+      "output": "Ready for directive routing."
+    }
+  ]
+}

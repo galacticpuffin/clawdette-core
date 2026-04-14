@@ -1,0 +1,13 @@
+{
+  "id": "voice_y6g3l43l",
+  "layer": "session",
+  "title": "Voice Transcript",
+  "summary": "Whisper adapter not configured yet. This placeholder transcript confirms the voice lane and storage path are active.",
+  "tags": [
+    "voice",
+    "transcript",
+    "routing"
+  ],
+  "createdAt": "2026-04-14T12:41:40.800Z",
+  "updatedAt": "2026-04-14T12:41:40.800Z"
+}

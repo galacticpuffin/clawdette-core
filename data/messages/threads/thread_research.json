@@ -1,0 +1,23 @@
+{
+  "id": "thread_research",
+  "agentId": "research",
+  "title": "Research Thread",
+  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "messages": [
+    {
+      "id": "msg_3n07e2vm",
+      "threadId": "thread_research",
+      "author": "agent",
+      "agentId": "research",
+      "createdAt": "2026-04-14T16:27:30.564Z",
+      "state": "thinking",
+      "linkedAgents": [
+        "chief-of-staff",
+        "strategy",
+        "product"
+      ],
+      "content": "Research online. Finds patterns, gathers evidence, and surfaces strategic options.",
+      "output": "Ready for directive routing."
+    }
+  ]
+}

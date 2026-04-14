@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Activity, Brain, Radio, Save, Shield, Waves } from "lucide-react";
+import { Activity, Brain, Radio, Save, Shield, Siren, Waves } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import type { AgentNode, CoreState, ZoomLevel } from "@/types/core";
@@ -51,13 +51,17 @@ export function BrainHud({
         >
           <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.4em] text-pink-200/70">
             <span>System Vitals</span>
-            <span>{state.ambientMode}</span>
+            <span>{state.systemMode}</span>
           </div>
           <div className="mt-4 grid grid-cols-2 gap-3 text-sm">
             <Vital icon={Activity} label="Signal Lanes" value={String(state.signals.length)} />
             <Vital icon={Waves} label="Zoom State" value={state.zoom} />
             <Vital icon={Shield} label="Autosave" value={dirty ? "Dirty" : "Stable"} />
             <Vital icon={Radio} label="Last Save" value={lastSavedLabel} />
+          </div>
+          <div className="mt-4 flex items-center gap-2 rounded-3xl border border-pink-100/10 bg-pink-100/6 px-4 py-3 text-sm text-pink-50">
+            <Siren size={16} className="text-pink-300" />
+            Mode {state.systemMode} with {state.taskThreads.length} live threads and {state.notifications.length} notification events.
           </div>
           <button
             type="button"
@@ -105,6 +109,9 @@ export function BrainHud({
           <div className="text-[11px] uppercase tracking-[0.4em] text-pink-200/70">Active Region</div>
           <div className="mt-2 text-xl text-pink-50">{activeAgent?.name ?? "None selected"}</div>
           <div className="mt-1 text-sm text-pink-100/78">{activeAgent?.mission}</div>
+          <div className="mt-3 text-xs uppercase tracking-[0.2em] text-pink-100/46">
+            Workspace {state.workspace.label} · {state.workspace.mode}
+          </div>
         </motion.div>
       </div>
     </>

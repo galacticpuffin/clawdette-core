@@ -1,0 +1,23 @@
+{
+  "id": "thread_cfo",
+  "agentId": "cfo",
+  "title": "CFO Thread",
+  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "messages": [
+    {
+      "id": "msg_7w1vxdf0",
+      "threadId": "thread_cfo",
+      "author": "agent",
+      "agentId": "cfo",
+      "createdAt": "2026-04-14T16:27:30.564Z",
+      "state": "monitoring",
+      "linkedAgents": [
+        "ceo",
+        "sales",
+        "operations"
+      ],
+      "content": "CFO online. Tracks resource allocation, financial posture, and leverage.",
+      "output": "Ready for directive routing."
+    }
+  ]
+}

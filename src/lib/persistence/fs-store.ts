@@ -10,6 +10,8 @@ export const dataPaths = {
   projectMemory: path.join(root, "memory", "project-memory.json"),
   lifeAdminMemory: path.join(root, "memory", "life-admin-memory.json"),
   taskMemory: path.join(root, "memory", "task-memory.json"),
+  notifications: path.join(root, "memory", "notifications.json"),
+  workspaces: path.join(root, "state", "workspace-profile.json"),
   continuation: path.join(root, "memory", "continuation-summary.json"),
   snapshotDir: path.join(root, "snapshots"),
   checkpointDir: path.join(root, "checkpoints"),
@@ -30,7 +32,11 @@ export async function readJsonFile<T>(filePath: string, fallback: T): Promise<T>
   try {
     const raw = await readFile(filePath, "utf8");
     return JSON.parse(raw) as T;
-  } catch {
+  } catch (error) {
+    console.error("[CLAWDETTE] persistence parse failed", {
+      filePath,
+      message: error instanceof Error ? error.message : "unknown parse error",
+    });
     return fallback;
   }
 }

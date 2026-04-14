@@ -2,39 +2,26 @@
 
 import { useMemo, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Float, Line, OrbitControls, Stars } from "@react-three/drei";
+import { Float, Line, OrbitControls, Sparkles, Stars } from "@react-three/drei";
 import * as THREE from "three";
 
 import { getAgentPosition } from "@/lib/neural/signals";
 import type { AgentNode, NeuralSignal, ZoomLevel } from "@/types/core";
 
 function NeuralShell() {
-  const meshRef = useRef<THREE.Mesh>(null);
+  const glowRef = useRef<THREE.Mesh>(null);
 
   useFrame((state) => {
     const t = state.clock.elapsedTime;
-    if (!meshRef.current) return;
-    meshRef.current.rotation.y = Math.sin(t * 0.12) * 0.12;
-    meshRef.current.rotation.x = Math.cos(t * 0.08) * 0.05;
-    meshRef.current.scale.setScalar(1 + Math.sin(t * 0.9) * 0.02);
+    if (!glowRef.current) return;
+    glowRef.current.scale.setScalar(1 + Math.sin(t * 0.35) * 0.025);
   });
 
   return (
     <group>
-      <mesh ref={meshRef}>
-        <sphereGeometry args={[2.2, 64, 64]} />
-        <meshStandardMaterial
-          color="#ff5cb7"
-          transparent
-          opacity={0.08}
-          emissive="#ff3892"
-          emissiveIntensity={0.85}
-          wireframe
-        />
-      </mesh>
-      <mesh scale={[1.7, 1.15, 1.55]}>
-        <sphereGeometry args={[1.5, 64, 64]} />
-        <meshStandardMaterial color="#ff99de" transparent opacity={0.06} emissive="#ff84c9" />
+      <mesh ref={glowRef} scale={[2.6, 1.7, 2.2]}>
+        <sphereGeometry args={[1.2, 32, 32]} />
+        <meshStandardMaterial color="#ff8bd2" transparent opacity={0.035} emissive="#ff73c8" emissiveIntensity={1.6} />
       </mesh>
     </group>
   );
@@ -56,19 +43,20 @@ function AgentStar({
   useFrame((state) => {
     const t = state.clock.elapsedTime + agent.load * 6;
     if (!ref.current) return;
-    ref.current.scale.setScalar(active ? 1.5 + Math.sin(t * 2.8) * 0.15 : 1 + Math.sin(t * 1.5) * 0.08);
+    ref.current.scale.setScalar(active ? 1.18 + Math.sin(t * 1.5) * 0.08 : 0.92 + Math.sin(t * 0.8) * 0.04);
   });
 
-  const size = zoom === "far" ? 0.06 : zoom === "mid" ? 0.085 : 0.12;
+  const base = zoom === "far" ? 0.013 : zoom === "mid" ? 0.018 : 0.028;
+  const size = base + agent.signal * 0.01 + Math.abs(agent.position[2]) * 0.002;
 
   return (
-    <Float speed={1.6} rotationIntensity={0.12} floatIntensity={0.35}>
+    <Float speed={0.6} rotationIntensity={0.04} floatIntensity={0.12}>
       <mesh ref={ref} position={agent.position} onClick={() => onSelect(agent.id)}>
         <sphereGeometry args={[size, 22, 22]} />
         <meshStandardMaterial
           color={agent.color}
           emissive={agent.color}
-          emissiveIntensity={active ? 3 : 1.7}
+          emissiveIntensity={active ? 2 : 0.95}
           toneMapped={false}
         />
       </mesh>
@@ -92,14 +80,54 @@ function SignalPaths({ signals }: { signals: NeuralSignal[] }) {
           <Line
             key={signal.id}
             points={[start, mid, end]}
-            color="#ff8ed8"
-            lineWidth={signal.intensity * 1.2}
+            color="#ffaddf"
+            lineWidth={0.18 + signal.weight * 0.22}
             transparent
-            opacity={0.16 + signal.intensity * 0.28}
+            opacity={Math.max(0.015, 0.03 + signal.intensity * 0.08 - signal.decay * 0.04)}
           />
         );
       })}
     </>
+  );
+}
+
+function SignalParticles({ signals }: { signals: NeuralSignal[] }) {
+  return (
+    <>
+      {signals.map((signal, index) => (
+        <TravelingPulse key={signal.id} signal={signal} offset={index * 0.2} />
+      ))}
+    </>
+  );
+}
+
+function TravelingPulse({ signal, offset }: { signal: NeuralSignal; offset: number }) {
+  const ref = useRef<THREE.Mesh>(null);
+  const curve = useMemo(() => {
+    const start = new THREE.Vector3(...getAgentPosition(signal.from));
+    const end = new THREE.Vector3(...getAgentPosition(signal.to));
+    const mid = new THREE.Vector3(
+      (start.x + end.x) / 2,
+      (start.y + end.y) / 2 + 0.22 + signal.intensity * 0.12,
+      (start.z + end.z) / 2,
+    );
+
+    return new THREE.CatmullRomCurve3([start, mid, end]);
+  }, [signal]);
+
+  useFrame((state) => {
+    if (!ref.current) return;
+    const t = (state.clock.elapsedTime * (0.08 + signal.intensity * 0.08) + offset) % 1;
+    const point = curve.getPoint(t);
+    ref.current.position.copy(point);
+    ref.current.scale.setScalar(0.55 + signal.intensity * 0.75);
+  });
+
+  return (
+    <mesh ref={ref}>
+      <sphereGeometry args={[0.03, 16, 16]} />
+      <meshStandardMaterial color="#ffc0eb" emissive="#ff8ed8" emissiveIntensity={2.8} toneMapped={false} />
+    </mesh>
   );
 }
 
@@ -119,7 +147,7 @@ function RegionClouds() {
       {clouds.map((cloud, index) => (
         <mesh key={index} position={cloud.position} scale={cloud.scale}>
           <sphereGeometry args={[0.8, 32, 32]} />
-          <meshStandardMaterial color="#ff57ae" transparent opacity={0.06} emissive="#ff57ae" />
+          <meshStandardMaterial color="#ff57ae" transparent opacity={0.018} emissive="#ff57ae" />
         </mesh>
       ))}
     </>
@@ -131,27 +159,42 @@ export function NeuralScene({
   signals,
   activeAgentId,
   zoom,
+  systemMode,
   onSelect,
 }: {
   agents: AgentNode[];
   signals: NeuralSignal[];
   activeAgentId: string;
   zoom: ZoomLevel;
+  systemMode: "CALM" | "ACTIVE" | "ALERT" | "FOCUS" | "EMERGENCY";
   onSelect: (agentId: string) => void;
 }) {
   const cameraPosition: [number, number, number] =
     zoom === "far" ? [0, 0.2, 6.3] : zoom === "mid" ? [0.1, 0.1, 4.8] : [0.15, 0.1, 3.1];
+  const palette =
+    systemMode === "EMERGENCY"
+      ? { ambient: "#ff9ccf", pulse: "#ff2f78", accent: "#ff7ca7" }
+      : systemMode === "ALERT"
+        ? { ambient: "#ffacd9", pulse: "#ff4699", accent: "#ff97d9" }
+        : systemMode === "FOCUS"
+          ? { ambient: "#ffc4ea", pulse: "#ff69bb", accent: "#ffb3e8" }
+          : systemMode === "ACTIVE"
+            ? { ambient: "#ffbadf", pulse: "#ff5bb0", accent: "#ffb3df" }
+            : { ambient: "#f9c9ec", pulse: "#d45f9e", accent: "#f0b8dc" };
 
   return (
     <Canvas camera={{ position: cameraPosition, fov: 38 }} dpr={[1, 2]}>
       <color attach="background" args={["#040106"]} />
-      <ambientLight intensity={0.8} color="#ffacd9" />
-      <pointLight position={[0, 0, 2]} intensity={28} color="#ff4ba1" />
-      <pointLight position={[2, -1, 1]} intensity={18} color="#ffb4eb" />
-      <Stars radius={80} depth={30} count={2200} factor={4} saturation={0} fade speed={0.7} />
+      <ambientLight intensity={0.8} color={palette.ambient} />
+      <pointLight position={[0, 0, 2]} intensity={16} color={palette.pulse} />
+      <pointLight position={[2, -1, 1]} intensity={9} color={palette.accent} />
+      <fog attach="fog" args={["#050208", 4.8, 12]} />
+      <Stars radius={90} depth={42} count={3000} factor={3.2} saturation={0} fade speed={0.28} />
+      <Sparkles count={80} scale={[7, 5, 6]} size={1.4} speed={0.08} color="#ff92db" opacity={0.55} />
       <NeuralShell />
       <RegionClouds />
       <SignalPaths signals={signals} />
+      <SignalParticles signals={signals} />
       {agents.map((agent) => (
         <AgentStar
           key={agent.id}
@@ -161,7 +204,7 @@ export function NeuralScene({
           onSelect={onSelect}
         />
       ))}
-      <OrbitControls enablePan={false} enableZoom={false} autoRotate autoRotateSpeed={0.18} />
+      <OrbitControls enablePan={false} enableZoom={false} autoRotate autoRotateSpeed={zoom === "close" ? 0.04 : 0.07} />
     </Canvas>
   );
 }

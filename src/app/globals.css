@@ -36,6 +36,10 @@ body {
   overflow: hidden;
 }
 
+textarea {
+  resize: none;
+}
+
 button,
 input,
 textarea {
@@ -51,6 +55,13 @@ textarea {
 
 .glow-text {
   text-shadow: 0 0 26px rgba(255, 117, 197, 0.55);
+}
+
+.neural-fog {
+  background:
+    radial-gradient(circle at center, rgba(255, 102, 194, 0.08), transparent 34%),
+    radial-gradient(circle at 50% 50%, rgba(142, 109, 255, 0.04), transparent 52%);
+  filter: blur(40px);
 }
 
 .brain-grid {

@@ -1,0 +1,24 @@
+{
+  "id": "thread_engineering",
+  "agentId": "engineering",
+  "title": "Engineering Thread",
+  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "messages": [
+    {
+      "id": "msg_oy0a2mua",
+      "threadId": "thread_engineering",
+      "author": "agent",
+      "agentId": "engineering",
+      "createdAt": "2026-04-14T16:27:30.564Z",
+      "state": "executing",
+      "linkedAgents": [
+        "cto",
+        "product",
+        "automation",
+        "memory"
+      ],
+      "content": "Engineering online. Constructs systems, tools, and interfaces that make the core real.",
+      "output": "Ready for directive routing."
+    }
+  ]
+}

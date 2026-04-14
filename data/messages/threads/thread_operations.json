@@ -1,0 +1,24 @@
+{
+  "id": "thread_operations",
+  "agentId": "operations",
+  "title": "Operations Thread",
+  "updatedAt": "2026-04-14T16:27:30.564Z",
+  "messages": [
+    {
+      "id": "msg_2i0ldg7f",
+      "threadId": "thread_operations",
+      "author": "agent",
+      "agentId": "operations",
+      "createdAt": "2026-04-14T16:27:30.564Z",
+      "state": "executing",
+      "linkedAgents": [
+        "coo",
+        "sales",
+        "automation",
+        "assistant-dispatch"
+      ],
+      "content": "Operations online. Keeps queues moving and transforms intent into repeatable delivery.",
+      "output": "Ready for directive routing."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "thread_assistant-dispatch",
+  "agentId": "assistant-dispatch",
+  "title": "Assistant / Dispatch Thread",
+  "updatedAt": "2026-04-14T16:34:04.854Z",
+  "messages": [
+    {
+      "id": "msg_wt9001zz",
+      "threadId": "thread_assistant-dispatch",
+      "author": "agent",
+      "agentId": "assistant-dispatch",
+      "createdAt": "2026-04-14T16:27:30.564Z",
+      "state": "executing",
+      "linkedAgents": [
+        "chief-of-staff",
+        "operations",
+        "automation",
+        "voice-comms"
+      ],
+      "content": "Assistant / Dispatch online. Receives incoming instructions and routes them to the correct cortex.",
+      "output": "Ready for directive routing."
+    },
+    {
+      "id": "msg_28k27vyl",
+      "threadId": "thread_assistant-dispatch",
+      "author": "user",
+      "agentId": "assistant-dispatch",
+      "content": "HI",
+      "createdAt": "2026-04-14T16:34:04.851Z",
+      "state": "captured",
+      "linkedAgents": [
+        "assistant-dispatch",
+        "chief-of-staff"
+      ]
+    },
+    {
+      "id": "msg_30i18tz9",
+      "threadId": "thread_assistant-dispatch",
+      "author": "system",
+      "agentId": "assistant-dispatch",
+      "content": "Thought captured and routed into \"HI\".",
+      "createdAt": "2026-04-14T16:34:04.851Z",
+      "state": "researching",
+      "linkedAgents": [
+        "assistant-dispatch",
+        "chief-of-staff"
+      ],
+      "output": "Assistant / Dispatch should classify, assign, and keep the thread alive without needing another prompt."
+    }
+  ]
+}
